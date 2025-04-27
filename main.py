@@ -35,7 +35,7 @@ import asyncio
 from fastapi.middleware.cors import CORSMiddleware
 
 client = AsyncOpenAI(
-    api_key="sk-3ecff224d9a146e68780b3cd728dd7ae",
+    api_key="your-api-key-here",
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
 # JWT配置

@@ -4,7 +4,7 @@ import json
 def get_bkg(symbol):
 	print("🤔 正在分析代币背景信息...")
 	client = OpenAI(
-		api_key='sk-3ecff224d9a146e68780b3cd728dd7ae',
+		api_key='your-api-key-here',
 		base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 	)
 	reasoning_content = ""  # 定义完整思考过程

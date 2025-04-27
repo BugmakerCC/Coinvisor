@@ -7,7 +7,7 @@ from openai import OpenAI
 import re
 
 API_ENDPOINT = "https://data-api.coindesk.com/v1/asset-events"
-API_KEY = "de475fbec42eb9692e5b628b487a9196c613aa3962b5a57aa4288b6e1ef36a85"  # 替换为你的API密钥
+API_KEY = "your-api-key-here"  # 替换为你的API密钥
 def extract_json_blocks(text):
     """
     提取文本中以 ```json 开头并以 ``` 结尾的代码块内容。
@@ -76,7 +76,7 @@ def classify_asset_events(events):
     """
     print("🤔 正在分析事件数据...")
     client = OpenAI(
-		api_key='sk-3ecff224d9a146e68780b3cd728dd7ae',
+		api_key='your-api-key-here',
 		base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 	)
     completion = client.chat.completions.create(

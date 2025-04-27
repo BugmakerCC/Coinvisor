@@ -75,7 +75,7 @@ def analyze_k(image_path):
     base64_image = base64.b64encode(image_data).decode("utf-8")
     client = OpenAI(
         # 若没有配置环境变量，请用百炼API Key将下行替换为：api_key="sk-xxx",
-        api_key="sk-25c7f85d161a4856839e4ba4eac42e27",
+        api_key="your-api-key-here",
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
     )
 

@@ -8,8 +8,8 @@ import json
 from openai import OpenAI
 
 load_dotenv()
-ETHERSCAN_API_KEY = os.getenv("ETHERSCAN_API_KEY", "KFC1IGGJ61EM5757AG5K3BD7Y2CYMC827Q")
-QWEN_API_KEY = 'sk-25c7f85d161a4856839e4ba4eac42e27'
+ETHERSCAN_API_KEY = os.getenv("ETHERSCAN_API_KEY", "your-api-key-here")
+QWEN_API_KEY = 'your-api-key-here'
 proxies = {
     'https': 'https://127.0.0.1:7890',     # 查找到你的vpn在本机使用的https代理端口
     'http': 'http://127.0.0.1:7890',       # 查找到vpn在本机使用的http代理端口

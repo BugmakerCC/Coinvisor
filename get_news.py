@@ -25,7 +25,7 @@ def get_news():
     one_day_seconds = 24 * 60 * 60  # 一天的秒数
     # 请求CoinDesk新闻API
     response = requests.get('https://data-api.coindesk.com/news/v1/article/list',
-        params={"lang":"EN","limit":100,"source_ids":"coindesk","api_key":"de475fbec42eb9692e5b628b487a9196c613aa3962b5a57aa4288b6e1ef36a85"},
+        params={"lang":"EN","limit":100,"source_ids":"coindesk","api_key":"your-api-key-here"},
         headers={"Content-type":"application/json; charset=UTF-8"}
     )
 
@@ -56,7 +56,7 @@ def analyze_news():
     news_data = get_news()
     print("🤔 正在总结新闻数据...")
     client = OpenAI(
-		api_key='sk-3ecff224d9a146e68780b3cd728dd7ae',
+		api_key='your-api-key-here',
 		base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 	)
     completion = client.chat.completions.create(

@@ -3,7 +3,7 @@ import os
 import requests
 import json
 
-ETHERSCAN_API_KEY = os.getenv("ETHERSCAN_API_KEY", "KFC1IGGJ61EM5757AG5K3BD7Y2CYMC827Q")
+ETHERSCAN_API_KEY = os.getenv("ETHERSCAN_API_KEY", "your-api-key-here")
 def get_src(symbol):
     chain_info = coin_search.get_coin_contract_addr(symbol)
     if not chain_info:
