@@ -1,0 +1,2203 @@
+{
+  "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+  "pkg": {
+    "private": true,
+    "scripts": {
+      "dev": "umi dev",
+      "build": "umi build",
+      "postinstall": "umi setup",
+      "setup": "umi setup",
+      "start": "npm run dev",
+      "start:test": "cross-env UMI_ENV=test max dev"
+    },
+    "dependencies": {
+      "@ant-design/x": "^1.1.1",
+      "@umijs/max": "^4.4.7",
+      "react-markdown": "^10.1.0",
+      "rehype-raw": "^7.0.0",
+      "remark-gfm": "^4.0.1",
+      "umi": "^4.4.7"
+    },
+    "devDependencies": {
+      "@types/react": "^18.0.33",
+      "@types/react-dom": "^18.0.11",
+      "@umijs/plugins": "^4.4.7",
+      "typescript": "^5.0.3"
+    }
+  },
+  "pkgPath": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\package.json",
+  "plugins": {
+    "./node_modules/@umijs/core/dist/service/servicePlugin": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "enableBy": "register",
+      "type": "preset",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/core/dist/service/servicePlugin.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/core/dist/service/servicePlugin",
+      "key": "servicePlugin"
+    },
+    "@umijs/preset-umi": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 109
+      },
+      "enableBy": "register",
+      "type": "preset",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/index.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "@umijs/preset-umi",
+      "key": "umi"
+    },
+    "./node_modules/@umijs/preset-umi/dist/registerMethods": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "onStart": [
+            0
+          ]
+        },
+        "register": 18
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/registerMethods.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/registerMethods",
+      "key": "registerMethods"
+    },
+    "@umijs/did-you-know": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "onStart": [
+            14
+          ]
+        },
+        "register": 4
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/did-you-know/dist/plugin.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "@umijs/did-you-know",
+      "key": "umijsDidYouKnow"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/404/404": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "modifyRoutes": [
+            0
+          ]
+        },
+        "register": 3
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/404/404.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/404/404",
+      "key": "404"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/appData/appData": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "modifyAppData": [
+            844
+          ]
+        },
+        "register": 138
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/appData/appData.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/appData/appData",
+      "key": "appData"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/appData/umiInfo": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/appData/umiInfo.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/appData/umiInfo",
+      "key": "umiInfo"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/check/check": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "onCheckConfig": [
+            0
+          ],
+          "onCheck": [
+            0
+          ]
+        },
+        "register": 7
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/check/check.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/check/check",
+      "key": "check"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/check/babel722": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "onCheck": [
+            1
+          ]
+        },
+        "register": 5
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/check/babel722.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/check/babel722",
+      "key": "babel722"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/codeSplitting/codeSplitting": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/codeSplitting/codeSplitting.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/codeSplitting/codeSplitting",
+      "key": "codeSplitting"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/configPlugins/configPlugins": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "modifyConfig": [
+            0
+          ]
+        },
+        "register": 64
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/configPlugins/configPlugins.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/configPlugins/configPlugins",
+      "key": "configPlugins"
+    },
+    "virtual: config-title": {
+      "id": "virtual: config-title",
+      "key": "title",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-styles": {
+      "id": "virtual: config-styles",
+      "key": "styles",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-scripts": {
+      "id": "virtual: config-scripts",
+      "key": "scripts",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-routes": {
+      "id": "virtual: config-routes",
+      "key": "routes",
+      "config": {
+        "onChange": "regenerateTmpFiles"
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-routeLoader": {
+      "id": "virtual: config-routeLoader",
+      "key": "routeLoader",
+      "config": {
+        "default": {
+          "moduleType": "esm"
+        }
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-reactRouter5Compat": {
+      "id": "virtual: config-reactRouter5Compat",
+      "key": "reactRouter5Compat",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-presets": {
+      "id": "virtual: config-presets",
+      "key": "presets",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-plugins": {
+      "id": "virtual: config-plugins",
+      "key": "plugins",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-npmClient": {
+      "id": "virtual: config-npmClient",
+      "key": "npmClient",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-mountElementId": {
+      "id": "virtual: config-mountElementId",
+      "key": "mountElementId",
+      "config": {
+        "default": "root"
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-metas": {
+      "id": "virtual: config-metas",
+      "key": "metas",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-links": {
+      "id": "virtual: config-links",
+      "key": "links",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-historyWithQuery": {
+      "id": "virtual: config-historyWithQuery",
+      "key": "historyWithQuery",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-history": {
+      "id": "virtual: config-history",
+      "key": "history",
+      "config": {
+        "default": {
+          "type": "browser"
+        }
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-headScripts": {
+      "id": "virtual: config-headScripts",
+      "key": "headScripts",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-esbuildMinifyIIFE": {
+      "id": "virtual: config-esbuildMinifyIIFE",
+      "key": "esbuildMinifyIIFE",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-conventionRoutes": {
+      "id": "virtual: config-conventionRoutes",
+      "key": "conventionRoutes",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-conventionLayout": {
+      "id": "virtual: config-conventionLayout",
+      "key": "conventionLayout",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-base": {
+      "id": "virtual: config-base",
+      "key": "base",
+      "config": {
+        "default": "/"
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-analyze": {
+      "id": "virtual: config-analyze",
+      "key": "analyze",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-writeToDisk": {
+      "id": "virtual: config-writeToDisk",
+      "key": "writeToDisk",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-theme": {
+      "id": "virtual: config-theme",
+      "key": "theme",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-targets": {
+      "id": "virtual: config-targets",
+      "key": "targets",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-svgr": {
+      "id": "virtual: config-svgr",
+      "key": "svgr",
+      "config": {
+        "default": {}
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-svgo": {
+      "id": "virtual: config-svgo",
+      "key": "svgo",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-stylusLoader": {
+      "id": "virtual: config-stylusLoader",
+      "key": "stylusLoader",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-styleLoader": {
+      "id": "virtual: config-styleLoader",
+      "key": "styleLoader",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-srcTranspilerOptions": {
+      "id": "virtual: config-srcTranspilerOptions",
+      "key": "srcTranspilerOptions",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-srcTranspiler": {
+      "id": "virtual: config-srcTranspiler",
+      "key": "srcTranspiler",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-sassLoader": {
+      "id": "virtual: config-sassLoader",
+      "key": "sassLoader",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-runtimePublicPath": {
+      "id": "virtual: config-runtimePublicPath",
+      "key": "runtimePublicPath",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-purgeCSS": {
+      "id": "virtual: config-purgeCSS",
+      "key": "purgeCSS",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-publicPath": {
+      "id": "virtual: config-publicPath",
+      "key": "publicPath",
+      "config": {
+        "default": "/"
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-proxy": {
+      "id": "virtual: config-proxy",
+      "key": "proxy",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-postcssLoader": {
+      "id": "virtual: config-postcssLoader",
+      "key": "postcssLoader",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-outputPath": {
+      "id": "virtual: config-outputPath",
+      "key": "outputPath",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-normalCSSLoaderModules": {
+      "id": "virtual: config-normalCSSLoaderModules",
+      "key": "normalCSSLoaderModules",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-mfsu": {
+      "id": "virtual: config-mfsu",
+      "key": "mfsu",
+      "config": {
+        "default": {
+          "strategy": "eager"
+        }
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-mdx": {
+      "id": "virtual: config-mdx",
+      "key": "mdx",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-manifest": {
+      "id": "virtual: config-manifest",
+      "key": "manifest",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-lessLoader": {
+      "id": "virtual: config-lessLoader",
+      "key": "lessLoader",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-jsMinifierOptions": {
+      "id": "virtual: config-jsMinifierOptions",
+      "key": "jsMinifierOptions",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-jsMinifier": {
+      "id": "virtual: config-jsMinifier",
+      "key": "jsMinifier",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-inlineLimit": {
+      "id": "virtual: config-inlineLimit",
+      "key": "inlineLimit",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-ignoreMomentLocale": {
+      "id": "virtual: config-ignoreMomentLocale",
+      "key": "ignoreMomentLocale",
+      "config": {
+        "default": true
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-https": {
+      "id": "virtual: config-https",
+      "key": "https",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-hash": {
+      "id": "virtual: config-hash",
+      "key": "hash",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-forkTSChecker": {
+      "id": "virtual: config-forkTSChecker",
+      "key": "forkTSChecker",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-fastRefresh": {
+      "id": "virtual: config-fastRefresh",
+      "key": "fastRefresh",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-extraPostCSSPlugins": {
+      "id": "virtual: config-extraPostCSSPlugins",
+      "key": "extraPostCSSPlugins",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-extraBabelPresets": {
+      "id": "virtual: config-extraBabelPresets",
+      "key": "extraBabelPresets",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-extraBabelPlugins": {
+      "id": "virtual: config-extraBabelPlugins",
+      "key": "extraBabelPlugins",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-extraBabelIncludes": {
+      "id": "virtual: config-extraBabelIncludes",
+      "key": "extraBabelIncludes",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-externals": {
+      "id": "virtual: config-externals",
+      "key": "externals",
+      "config": {
+        "default": {}
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-esm": {
+      "id": "virtual: config-esm",
+      "key": "esm",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-devtool": {
+      "id": "virtual: config-devtool",
+      "key": "devtool",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-depTranspiler": {
+      "id": "virtual: config-depTranspiler",
+      "key": "depTranspiler",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-define": {
+      "id": "virtual: config-define",
+      "key": "define",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-deadCode": {
+      "id": "virtual: config-deadCode",
+      "key": "deadCode",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-cssPublicPath": {
+      "id": "virtual: config-cssPublicPath",
+      "key": "cssPublicPath",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-cssMinifierOptions": {
+      "id": "virtual: config-cssMinifierOptions",
+      "key": "cssMinifierOptions",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-cssMinifier": {
+      "id": "virtual: config-cssMinifier",
+      "key": "cssMinifier",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-cssLoaderModules": {
+      "id": "virtual: config-cssLoaderModules",
+      "key": "cssLoaderModules",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-cssLoader": {
+      "id": "virtual: config-cssLoader",
+      "key": "cssLoader",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-copy": {
+      "id": "virtual: config-copy",
+      "key": "copy",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-checkDepCssModules": {
+      "id": "virtual: config-checkDepCssModules",
+      "key": "checkDepCssModules",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-chainWebpack": {
+      "id": "virtual: config-chainWebpack",
+      "key": "chainWebpack",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-cacheDirectoryPath": {
+      "id": "virtual: config-cacheDirectoryPath",
+      "key": "cacheDirectoryPath",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-babelLoaderCustomize": {
+      "id": "virtual: config-babelLoaderCustomize",
+      "key": "babelLoaderCustomize",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-autoprefixer": {
+      "id": "virtual: config-autoprefixer",
+      "key": "autoprefixer",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-autoCSSModules": {
+      "id": "virtual: config-autoCSSModules",
+      "key": "autoCSSModules",
+      "config": {
+        "default": true
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-alias": {
+      "id": "virtual: config-alias",
+      "key": "alias",
+      "config": {
+        "default": {
+          "umi": "@@/exports",
+          "react": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\react",
+          "react-dom": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\react-dom",
+          "react-router": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\react-router",
+          "react-router-dom": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\react-router-dom"
+        }
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/crossorigin/crossorigin": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/crossorigin/crossorigin.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/crossorigin/crossorigin",
+      "key": "crossorigin"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/depsOnDemand/depsOnDemand": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "onStart": [
+            1
+          ]
+        },
+        "register": 8
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/depsOnDemand/depsOnDemand.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/depsOnDemand/depsOnDemand",
+      "key": "depsOnDemand"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/devTool/devTool": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 6
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/devTool/devTool.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/devTool/devTool",
+      "key": "devTool"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/esbuildHelperChecker/esbuildHelperChecker": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 202
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/esbuildHelperChecker/esbuildHelperChecker.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/esbuildHelperChecker/esbuildHelperChecker",
+      "key": "esbuildHelperChecker"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/esmi/esmi": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 703
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/esmi/esmi.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/esmi/esmi",
+      "key": "esmi"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/exportStatic/exportStatic": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 70
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/exportStatic/exportStatic.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/exportStatic/exportStatic",
+      "key": "exportStatic"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/favicons/favicons": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "modifyAppData": [
+            1
+          ]
+        },
+        "register": 2
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/favicons/favicons.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/favicons/favicons",
+      "key": "favicons"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/helmet/helmet": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 7
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/helmet/helmet.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/helmet/helmet",
+      "key": "helmet"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/icons/icons": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 12
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/icons/icons.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/icons/icons",
+      "key": "icons"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/mock/mock": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "onStart": [
+            3
+          ]
+        },
+        "register": 133
+      },
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/mock/mock.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/mock/mock",
+      "key": "mock"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/mpa/mpa": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 7
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/mpa/mpa.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/mpa/mpa",
+      "key": "mpa"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/okam/okam": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 7
+      },
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/okam/okam.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/okam/okam",
+      "key": "okam"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/overrides/overrides": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/overrides/overrides.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/overrides/overrides",
+      "key": "overrides"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/phantomDependency/phantomDependency": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 7
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/phantomDependency/phantomDependency.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/phantomDependency/phantomDependency",
+      "key": "phantomDependency"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/polyfill/polyfill": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "modifyConfig": [
+            4
+          ]
+        },
+        "register": 21
+      },
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/polyfill/polyfill.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/polyfill/polyfill",
+      "key": "polyfill"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/polyfill/publicPathPolyfill": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/polyfill/publicPathPolyfill.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/polyfill/publicPathPolyfill",
+      "key": "publicPathPolyfill"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/prepare/prepare": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 14
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/prepare/prepare.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/prepare/prepare",
+      "key": "prepare"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/routePrefetch/routePrefetch": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/routePrefetch/routePrefetch.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/routePrefetch/routePrefetch",
+      "key": "routePrefetch"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/terminal/terminal": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 9
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/terminal/terminal.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/terminal/terminal",
+      "key": "terminal"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/tmpFiles/tmpFiles": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 78
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/tmpFiles/tmpFiles.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/tmpFiles/tmpFiles",
+      "key": "tmpFiles"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/clientLoader/clientLoader": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 14
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/clientLoader/clientLoader.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/clientLoader/clientLoader",
+      "key": "clientLoader"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/routeProps/routeProps": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 5
+      },
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/routeProps/routeProps.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/routeProps/routeProps",
+      "key": "routeProps"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/ssr/ssr": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 27
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/ssr/ssr.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/ssr/ssr",
+      "key": "ssr"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/tmpFiles/configTypes": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 27
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/tmpFiles/configTypes.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/tmpFiles/configTypes",
+      "key": "configTypes"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/transform/transform": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 29
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/transform/transform.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/transform/transform",
+      "key": "transform"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/lowImport/lowImport": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 19
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/lowImport/lowImport.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/lowImport/lowImport",
+      "key": "lowImport"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/vite/vite": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 4
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/vite/vite.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/vite/vite",
+      "key": "vite"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/apiRoute/apiRoute": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 66
+      },
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/apiRoute/apiRoute.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/apiRoute/apiRoute",
+      "key": "apiRoute"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/monorepo/redirect": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 116
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/monorepo/redirect.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/monorepo/redirect",
+      "key": "monorepoRedirect"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/test/test": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 11
+      },
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/test/test.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/test/test",
+      "key": "test"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/clickToComponent/clickToComponent": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 7
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/clickToComponent/clickToComponent.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/clickToComponent/clickToComponent",
+      "key": "clickToComponent"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/legacy/legacy": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 14
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/legacy/legacy.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/legacy/legacy",
+      "key": "legacy"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/classPropertiesLoose/classPropertiesLoose": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/classPropertiesLoose/classPropertiesLoose.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/classPropertiesLoose/classPropertiesLoose",
+      "key": "classPropertiesLoose"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/webpack/webpack": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 7
+      },
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/webpack/webpack.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/webpack/webpack",
+      "key": "preset-umi:webpack"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/swc/swc": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "addOnDemandDeps": [
+            0
+          ]
+        },
+        "register": 3
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/swc/swc.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/swc/swc",
+      "key": "swc"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/ui/ui": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 19
+      },
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/ui/ui.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/ui/ui",
+      "key": "ui"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/mako/mako": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 5
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/mako/mako.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/mako/mako",
+      "key": "mako"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/hmrGuardian/hmrGuardian": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 16
+      },
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/hmrGuardian/hmrGuardian.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/hmrGuardian/hmrGuardian",
+      "key": "hmrGuardian"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/routePreloadOnLoad/routePreloadOnLoad": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 13
+      },
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/routePreloadOnLoad/routePreloadOnLoad.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/routePreloadOnLoad/routePreloadOnLoad",
+      "key": "routePreloadOnLoad"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/forget/forget": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 8
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/features/forget/forget.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/forget/forget",
+      "key": "forget"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/build": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 38
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/build.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/build",
+      "key": "build"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/config/config": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 156
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/config/config.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/config/config",
+      "key": "config"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/dev/dev": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "modifyAppData": [
+            163
+          ],
+          "onStart": [
+            1
+          ]
+        },
+        "register": 342
+      },
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/dev/dev.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/dev/dev",
+      "key": "dev"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/help": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 4
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/help.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/help",
+      "key": "help"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/lint": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 4
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/lint.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/lint",
+      "key": "lint"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/setup": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/setup.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/setup",
+      "key": "setup"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/deadcode": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 4
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/deadcode.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/deadcode",
+      "key": "deadcode"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/version": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 2
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/version.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/version",
+      "key": "version"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/page": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 17
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/page.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/page",
+      "key": "generator:page"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/prettier": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 4
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/prettier.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/prettier",
+      "key": "generator:prettier"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/tsconfig": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 6
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/tsconfig.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/tsconfig",
+      "key": "generator:tsconfig"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/jest": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 5
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/jest.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/jest",
+      "key": "generator:jest"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/tailwindcss": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 4
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/tailwindcss.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/tailwindcss",
+      "key": "generator:tailwindcss"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/dva": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 5
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/dva.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/dva",
+      "key": "generator:dva"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/component": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 5
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/component.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/component",
+      "key": "generator:component"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/mock": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 5
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/mock.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/mock",
+      "key": "generator:mock"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/cypress": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 6
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/cypress.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/cypress",
+      "key": "generator:cypress"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/api": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 5
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/api.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/api",
+      "key": "generator:api"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/precommit": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 4
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/precommit.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/precommit",
+      "key": "generator:precommit"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/plugin": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/plugin.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/plugin",
+      "key": "command:plugin"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/verify-commit": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 4
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/verify-commit.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/verify-commit",
+      "key": "verifyCommit"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/preview": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 71
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/preview.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/preview",
+      "key": "preview"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/mfsu/mfsu": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 9
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/preset-umi/dist/commands/mfsu/mfsu.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/mfsu/mfsu",
+      "key": "mfsu-cli"
+    },
+    "@umijs/plugin-run": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 16
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/plugin-run/dist/index.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "@umijs/plugin-run",
+      "key": "run"
+    },
+    "./node_modules/@umijs/core/dist/service/generatePlugin": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 4
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/core/dist/service/generatePlugin.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/core/dist/service/generatePlugin",
+      "key": "generatePlugin"
+    },
+    "./node_modules/@umijs/plugins/dist/request": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 5
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/node_modules/@umijs/plugins/dist/request.js",
+      "cwd": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend",
+      "id": "./node_modules/@umijs/plugins/dist/request",
+      "key": "request"
+    }
+  },
+  "presets": [],
+  "name": "dev",
+  "args": {
+    "_": []
+  },
+  "userConfig": {
+    "plugins": [
+      "@umijs/plugins/dist/request"
+    ],
+    "request": {
+      "dataField": "data"
+    },
+    "define": {
+      "REACT_APP_ENV": "dev",
+      "SERVER_ADDRESS": "http://47.111.15.36:5000"
+    },
+    "proxy": {
+      "/api": {
+        "target": "http://47.111.15.36:5000/",
+        "changeOrigin": true
+      },
+      "/sse": {
+        "target": "http://localhost:3000/",
+        "changeOrigin": true
+      }
+    },
+    "routes": [
+      {
+        "path": "/",
+        "component": "./Login"
+      },
+      {
+        "path": "/docs",
+        "component": "./docs.tsx"
+      },
+      {
+        "path": "/chat",
+        "component": "./Chat"
+      },
+      {
+        "path": "/login",
+        "component": "./Login"
+      },
+      {
+        "path": "/register",
+        "component": "./Register"
+      }
+    ]
+  },
+  "mainConfigFile": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\config\\config.ts",
+  "config": {
+    "routeLoader": {
+      "moduleType": "esm"
+    },
+    "mountElementId": "root",
+    "history": {
+      "type": "browser"
+    },
+    "base": "/",
+    "svgr": {},
+    "publicPath": "/",
+    "mfsu": {
+      "strategy": "eager"
+    },
+    "ignoreMomentLocale": true,
+    "externals": {},
+    "autoCSSModules": true,
+    "alias": {
+      "umi": "@@/exports",
+      "react": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\react",
+      "react-dom": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\react-dom",
+      "react-router": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\react-router",
+      "react-router-dom": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\react-router-dom",
+      "@": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/src",
+      "@@": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/src/.umi",
+      "regenerator-runtime": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\@umijs\\preset-umi\\node_modules\\regenerator-runtime"
+    },
+    "plugins": [
+      "@umijs/plugins/dist/request"
+    ],
+    "request": {
+      "dataField": "data"
+    },
+    "define": {
+      "REACT_APP_ENV": "dev",
+      "SERVER_ADDRESS": "http://47.111.15.36:5000"
+    },
+    "proxy": {
+      "/api": {
+        "target": "http://47.111.15.36:5000/",
+        "changeOrigin": true
+      },
+      "/sse": {
+        "target": "http://localhost:3000/",
+        "changeOrigin": true
+      }
+    },
+    "routes": [
+      {
+        "path": "/",
+        "component": "./Login"
+      },
+      {
+        "path": "/docs",
+        "component": "./docs.tsx"
+      },
+      {
+        "path": "/chat",
+        "component": "./Chat"
+      },
+      {
+        "path": "/login",
+        "component": "./Login"
+      },
+      {
+        "path": "/register",
+        "component": "./Register"
+      }
+    ],
+    "targets": {
+      "chrome": 80
+    }
+  },
+  "defaultConfig": {
+    "routeLoader": {
+      "moduleType": "esm"
+    },
+    "mountElementId": "root",
+    "history": {
+      "type": "browser"
+    },
+    "base": "/",
+    "svgr": {},
+    "publicPath": "/",
+    "mfsu": {
+      "strategy": "eager"
+    },
+    "ignoreMomentLocale": true,
+    "externals": {},
+    "autoCSSModules": true,
+    "alias": {
+      "umi": "@@/exports",
+      "react": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\react",
+      "react-dom": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\react-dom",
+      "react-router": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\react-router",
+      "react-router-dom": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\react-router-dom",
+      "@": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/src",
+      "@@": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/src/.umi",
+      "regenerator-runtime": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\@umijs\\preset-umi\\node_modules\\regenerator-runtime"
+    },
+    "plugins": [
+      "@umijs/plugins/dist/request"
+    ],
+    "request": {
+      "dataField": "data"
+    },
+    "define": {
+      "REACT_APP_ENV": "dev",
+      "SERVER_ADDRESS": "http://47.111.15.36:5000"
+    },
+    "proxy": {
+      "/api": {
+        "target": "http://47.111.15.36:5000/",
+        "changeOrigin": true
+      },
+      "/sse": {
+        "target": "http://localhost:3000/",
+        "changeOrigin": true
+      }
+    },
+    "routes": [
+      {
+        "path": "/",
+        "component": "./Login"
+      },
+      {
+        "path": "/docs",
+        "component": "./docs.tsx"
+      },
+      {
+        "path": "/chat",
+        "component": "./Chat"
+      },
+      {
+        "path": "/login",
+        "component": "./Login"
+      },
+      {
+        "path": "/register",
+        "component": "./Register"
+      }
+    ],
+    "targets": {
+      "chrome": 80
+    }
+  },
+  "routes": {
+    "1": {
+      "path": "/",
+      "file": "@/pages/Login/index.tsx",
+      "parentId": "@@/global-layout",
+      "id": "1",
+      "absPath": "/",
+      "__content": "import React, { useState } from \"react\";\r\nimport { Form, Input, Button, message, Modal } from \"antd\";\r\nimport { Link, history } from \"umi\";\r\nimport { login } from \"@/services/chat\";\r\nimport { setToken } from \"@/services/request\";\r\nimport styles from \"./index.less\";\r\n\r\nexport const layout = false;\r\n\r\nconst LoginPage: React.FC = () => {\r\n  const [form] = Form.useForm();\r\n  const [loading, setLoading] = useState(false);\r\n  const [forgotVisible, setForgotVisible] = useState(false);\r\n  const [forgotEmail, setForgotEmail] = useState(\"\");\r\n\r\n  const onFinish = async (values: { email: string; password: string }) => {\r\n    setLoading(true);\r\n    try {\r\n      const { access_token: token } = await login(values);\r\n      setToken(token);\r\n      message.success(\"登录成功\");\r\n      history.push(\"/chat\");\r\n    } catch (error: any) {\r\n      const code = error?.response?.data?.errorCode;\r\n      const msg = error?.response?.data?.errorMessage || \"登录失败\";\r\n\r\n      if (code === \"EMAIL_NOT_FOUND\") {\r\n        form.setFields([{ name: \"email\", errors: [msg] }]);\r\n      } else if (code === \"INVALID_CREDENTIALS\") {\r\n        form.setFields([{ name: \"password\", errors: [msg] }]);\r\n      } else {\r\n        message.error(msg);\r\n      }\r\n    } finally {\r\n      setLoading(false);\r\n    }\r\n  };\r\n\r\n  const handleForgot = async () => {\r\n    if (!forgotEmail) {\r\n      message.warning(\"请输入邮箱后再提交\");\r\n      return;\r\n    }\r\n    try {\r\n      message.success(\"如果邮箱存在，重置链接已发送\");\r\n      setForgotVisible(false);\r\n    } catch {\r\n      message.error(\"发送失败，请稍后重试\");\r\n    }\r\n  };\r\n\r\n  return (\r\n   <div className={styles.pageWrapper}>\r\n        <div className={styles.logo}>\r\n          <img\r\n            className={styles.logoImg}\r\n            src=\"https://mdn.alipayobjects.com/huamei_iwk9zp/afts/img/A*eco6RrQhxbMAAAAAAAAAAAAADgCCAQ/original\"\r\n            alt=\"链 AI\"\r\n            draggable={false}\r\n          />\r\n          <span className={styles.logoText}>链 AI</span>\r\n        </div>\r\n\r\n      <div className={styles.contentWrapper}>\r\n        <div className={styles.loginContainer}>\r\n          <Form\r\n            form={form}\r\n            name=\"login\"\r\n            onFinish={onFinish}\r\n            layout=\"vertical\"\r\n          >\r\n            <Form.Item\r\n              name=\"email\"\r\n              label=\"邮箱\"\r\n              rules={[\r\n                { type: \"email\", message: \"请输入有效的邮箱地址\" },\r\n                { required: true, message: \"请输入邮箱地址\" },\r\n              ]}\r\n            >\r\n              <Input placeholder=\"请输入邮箱地址\" />\r\n            </Form.Item>\r\n\r\n            <Form.Item\r\n              name=\"password\"\r\n              label=\"密码\"\r\n              rules={[{ required: true, message: \"请输入密码\" }]}\r\n            >\r\n              <Input.Password placeholder=\"请输入密码\" />\r\n            </Form.Item>\r\n            <Form.Item className={styles.forgotRow} colon={false} wrapperCol={{ span: 24 }}>\r\n              <a onClick={() => setForgotVisible(true)}>忘记密码？</a>\r\n            </Form.Item>\r\n            <Form.Item>\r\n              <Button\r\n                type=\"primary\"\r\n                htmlType=\"submit\"\r\n                block\r\n                loading={loading}\r\n              >\r\n                登录\r\n              </Button>\r\n            </Form.Item>\r\n\r\n            <div className={styles.footer}>\r\n              <Link to=\"/register\">没有账号？立即注册</Link>\r\n            </div>\r\n          </Form>\r\n        </div>\r\n      </div>\r\n\r\n      <Modal\r\n        title=\"重置密码\"\r\n        visible={forgotVisible}\r\n        onOk={handleForgot}\r\n        onCancel={() => setForgotVisible(false)}\r\n        okText=\"发送重置链接\"\r\n      >\r\n        <Input\r\n          value={forgotEmail}\r\n          onChange={(e) => setForgotEmail(e.target.value)}\r\n          placeholder=\"请输入您的注册邮箱\"\r\n        />\r\n      </Modal>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default LoginPage;\r\n",
+      "__isJSFile": true,
+      "__absFile": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/src/pages/Login/index.tsx"
+    },
+    "2": {
+      "path": "/docs",
+      "file": "@/pages/docs.tsx",
+      "parentId": "@@/global-layout",
+      "id": "2",
+      "absPath": "/docs",
+      "__content": "const DocsPage = () => {\n  return (\n    <div>\n      <p>This is umi docs.</p>\n    </div>\n  );\n};\n\nexport default DocsPage;\n",
+      "__isJSFile": true,
+      "__absFile": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/src/pages/docs.tsx"
+    },
+    "3": {
+      "path": "/chat",
+      "file": "@/pages/Chat/index.tsx",
+      "parentId": "@@/global-layout",
+      "id": "3",
+      "absPath": "/chat",
+      "__content": "import {\n  Bubble,\n  Conversations,\n  Prompts,\n  Sender,\n  Welcome,\n  useXAgent,\n  useXChat,\n} from \"@ant-design/x\";\nimport { Button, Space, Image } from \"antd\";\nimport type { BubbleProps } from \"@ant-design/x\";\nimport { useEffect, useMemo, useState, useCallback } from \"react\";\n// import { getUserInfo } from \"@/services/chat\";\nimport { getToken, autoLogin } from \"@/services/request\";\nimport \"./index.less\";\n\nimport { FireOutlined, PlusOutlined, ReadOutlined } from \"@ant-design/icons\";\nimport type { GetProp } from \"antd\";\nimport ReactMarkdown from \"react-markdown\";\nimport remarkGfm from \"remark-gfm\";\n\nconst defaultConversationsItems = [\n  {\n    key: \"0\",\n    label: \"什么是区块链?\",\n  },\n];\n\nconst senderPromptsItems: GetProp<typeof Prompts, \"items\"> = [\n  {\n    key: \"1\",\n    description: \"共识算法\",\n    icon: <FireOutlined style={{ color: \"#FF4D4F\" }} />,\n  },\n  {\n    key: \"2\",\n    description: \"零知识证明\",\n    icon: <ReadOutlined style={{ color: \"#1890FF\" }} />,\n  },\n];\n\nconst roles: GetProp<typeof Bubble.List, \"roles\"> = {\n  ai: {\n    placement: \"start\",\n    typing: { step: 20, interval: 10 },\n  },\n  local: {\n    placement: \"end\",\n    variant: \"outlined\",\n  },\n};\n\nconst Independent = () => {\n  // ==================== State ====================\n\n  const [content, setContent] = useState(\"\");\n  const [conversationsItems, setConversationsItems] = useState(\n    defaultConversationsItems\n  );\n  const [activeKey, setActiveKey] = useState(defaultConversationsItems[0].key);\n\n  const [agent] = useXAgent({\n    request: async ({ message }, { onUpdate, onSuccess }) => {\n      let token = getToken();\n\n      // 如果 token 为空或过期，自动重新登录\n      if (!token) {\n        try {\n          token = await autoLogin();\n        } catch (loginError) {\n          console.error(\"自动登录失败:\", loginError);\n          throw loginError;\n        }\n      }\n\n      try {\n        const response = await fetch(\"http://116.62.42.206:5000/api/v1/chat\", {\n          method: \"POST\",\n          // @ts-ignore\n          headers: {\n            \"Content-Type\": \"application/json\",\n            Accept: \"text/event-stream\",\n            authorization: token,\n          },\n          body: JSON.stringify({ message }),\n          cache: \"no-store\",\n          credentials: \"same-origin\",\n        });\n\n        if (!response.ok)\n          throw new Error(`HTTP error! status: ${response.status}`);\n        if (!response.body) throw new Error(\"No response body\");\n\n        const reader = response.body.getReader();\n        const decoder = new TextDecoder();\n        let buffer = \"\";\n        let accumulatedContent = \"\";\n\n        while (true) {\n          const { done, value } = await reader.read();\n          if (done) {\n            onSuccess(accumulatedContent);\n            break;\n          }\n\n          buffer += decoder.decode(value, { stream: true });\n\n          // 处理完整事件（以\\n\\n分隔）\n          while (buffer.includes(\"\\n\\n\")) {\n            const splitIndex = buffer.indexOf(\"\\n\\n\");\n            const eventData = buffer.slice(0, splitIndex);\n            buffer = buffer.slice(splitIndex + 2);\n\n            // 处理事件数据\n            const lines = eventData.split(\"\\n\");\n            let content = \"\";\n            for (const line of lines) {\n              if (line.startsWith(\"data: \")) {\n                content += line.slice(6);\n              } else {\n                content += \"\\n\" + line;\n              }\n            }\n\n            if (content) {\n              accumulatedContent += content; // 累积内容\n              onUpdate(accumulatedContent); // 更新累积内容\n            }\n          }\n        }\n      } catch (error) {\n        console.error(\"请求失败:\", error);\n      }\n    },\n  });\n\n  const { onRequest, messages, setMessages } = useXChat({\n    agent,\n  });\n\n  useEffect(() => {\n    if (activeKey !== undefined) {\n      setMessages([]);\n    }\n    // 组件初始化时自动调用getUserInfo接口，如果token过期，request.ts中的自动登录机制会处理\n    // getUserInfo()\n    // .then((res: any) => {\n    //   console.log(\"用户信息获取成功:\", res);\n    // })\n    // .catch((err: any) => {\n    //   console.log(\"获取用户信息失败:\", err);\n    // });\n  }, [activeKey]);\n\n  // ==================== Event ====================\n  const onSubmit = (nextContent: string) => {\n    if (!nextContent) return;\n    onRequest(nextContent);\n    setContent(\"\");\n  };\n\n  const onPromptsItemClick: GetProp<typeof Prompts, \"onItemClick\"> = (info) => {\n    onRequest(info.data.description as string);\n  };\n\n  const onAddConversation = () => {\n    setConversationsItems([\n      ...conversationsItems,\n      {\n        key: `${conversationsItems.length}`,\n        label: `新对话 ${conversationsItems.length}`,\n      },\n    ]);\n    setActiveKey(`${conversationsItems.length}`);\n  };\n\n  const onConversationClick: GetProp<typeof Conversations, \"onActiveChange\"> = (\n    key\n  ) => {\n    setActiveKey(key);\n  };\n\n  // ==================== Nodes ====================\n  const placeholderNode = (\n    <Space direction=\"vertical\" size={16} className=\"placeholder\">\n      <Welcome\n        variant=\"borderless\"\n        title=\"👋 我是链智能助手，很高兴见到你！\"\n        description=\"这是一段描述……\"\n      />\n    </Space>\n  );\n\n  const ImageComponent = useCallback(\n    ({ src, alt }: { src?: string; alt?: string }) => {\n      const [loaded, setLoaded] = useState(false);\n\n      return (\n        <Image\n          src={src}\n          alt={alt}\n          style={{\n            opacity: loaded ? 1 : 0,\n          }}\n          onLoad={() => setLoaded(true)}\n        />\n      );\n    },\n    []\n  );\n\n  type ParagraphType = \"thinking\" | \"tool\" | \"analysis\" | \"response\";\n\n  const parseContent = (content: string) => {\n    const patterns: {\n      regex: RegExp;\n      type: ParagraphType;\n    }[] = [\n      { regex: /^🤔\\s*正在思考:\\s*/, type: \"thinking\" },\n      { regex: /^🔧\\s*正在调用.*?:\\s*/, type: \"tool\" },\n      { regex: /^😎\\s*正在分析.*?:\\s*/, type: \"analysis\" },\n      { regex: /^🤖\\s*正在回复:\\s*/, type: \"response\" },\n    ];\n\n    const paragraphs: { type: ParagraphType; content: string }[] = [];\n    let remaining = content;\n    let currentType: ParagraphType | null = null;\n    let buffer = \"\";\n\n    const flushBuffer = () => {\n      if (currentType && buffer.trim()) {\n        paragraphs.push({ type: currentType, content: buffer });\n        buffer = \"\";\n      }\n    };\n\n    while (remaining.length > 0) {\n      let matched = false;\n\n      for (const { regex, type } of patterns) {\n        const match = regex.exec(remaining);\n        if (match) {\n          flushBuffer();\n          currentType = type;\n\n          buffer += match[0] + \"\\n\\n\"; // 保留类型标识符\n\n          remaining = remaining.slice(match[0].length);\n          matched = true;\n          break;\n        }\n      }\n\n      if (!matched) {\n        const nextChar = remaining[0];\n        if (currentType === \"response\") {\n          buffer += nextChar;\n        } else {\n          buffer += nextChar.replace(/\\s/g, \"\"); // 去除空格\n        }\n\n        remaining = remaining.slice(1);\n      }\n    }\n\n    flushBuffer();\n    return paragraphs;\n  };\n\n  // ==================== 样式渲染逻辑 ====================\n  const getParagraphStyle = (type: ParagraphType) => {\n    const baseStyle = {\n      margin: \"8px 0\",\n      padding: \"0px 12px\",\n    };\n\n    switch (type) {\n      case \"thinking\":\n        return {\n          ...baseStyle,\n          borderLeft: \"3px solid #ddd\",\n          color: \"#666\",\n        };\n      case \"tool\":\n        return {\n          ...baseStyle,\n          borderLeft: \"3px solid #1890ff\",\n          color: \"#666\",\n        };\n      case \"analysis\":\n        return {\n          ...baseStyle,\n          borderLeft: \"3px solid #52c41a\",\n          color: \"#666\",\n        };\n      case \"response\":\n        return {\n          ...baseStyle,\n          color: \"#000\",\n        };\n      default:\n        return baseStyle;\n    }\n  };\n\n  // ==================== Markdown渲染 ====================\n  const renderMarkdown: BubbleProps[\"messageRender\"] = useCallback(\n    (content: string) => {\n      const paragraphs = parseContent(content);\n\n      return (\n        <div className=\"message-paragraphs\">\n          {paragraphs.map((paragraph, index) => (\n            <div key={index} style={getParagraphStyle(paragraph.type)}>\n              <ReactMarkdown\n                remarkPlugins={[remarkGfm]}\n                components={{\n                  img: ImageComponent,\n                  code: ({ node, className, children, ...props }) => (\n                    <code\n                      className={className}\n                      style={{\n                        background: \"#f5f5f5\",\n                        padding: \"2px 4px\",\n                        borderRadius: 4,\n                      }}\n                      {...props}\n                    >\n                      {children}\n                    </code>\n                  ),\n                }}\n              >\n                {paragraph.content}\n              </ReactMarkdown>\n            </div>\n          ))}\n        </div>\n      );\n    },\n    [ImageComponent]\n  );\n\n  // ==================== 消息列表优化 ====================\n  const memoizedItems = useMemo(() => {\n    return messages.map(({ id, message, status }) => ({\n      key: id,\n      role: status === \"local\" ? \"local\" : \"ai\",\n      content: message,\n      // typing: status !== \"local\" ? { step: 10, interval: 10 } : false,\n      messageRender:\n        status === \"local\" ? (content: string) => content : renderMarkdown,\n    }));\n  }, [messages, renderMarkdown]);\n\n  // 对话气泡\n  const items: GetProp<typeof Bubble.List, \"items\"> = memoizedItems;\n\n  const logoNode = (\n    <div className=\"logo\">\n      <img\n        src=\"https://mdn.alipayobjects.com/huamei_iwk9zp/afts/img/A*eco6RrQhxbMAAAAAAAAAAAAADgCCAQ/original\"\n        draggable={false}\n        alt=\"logo\"\n      />\n      <span>链 AI</span>\n    </div>\n  );\n\n  // ==================== Render =================\n  return (\n    <div className=\"layout\">\n      <div className=\"menu\">\n        {/* 🌟 Logo */}\n        {logoNode}\n        {/* 🌟 添加会话 */}\n        <Button\n          onClick={onAddConversation}\n          type=\"link\"\n          className=\"addBtn\"\n          icon={<PlusOutlined />}\n        >\n          新对话\n        </Button>\n        {/* 🌟 会话管理 */}\n        <Conversations\n          items={conversationsItems}\n          className=\"conversations\"\n          activeKey={activeKey}\n          onActiveChange={onConversationClick}\n        />\n      </div>\n      <div className=\"chat\">\n        {/* 🌟 消息列表 */}\n        <Bubble.List\n          items={\n            items.length > 0\n              ? items\n              : [{ content: placeholderNode, variant: \"borderless\" }]\n          }\n          roles={roles}\n          className=\"messages\"\n        />\n        {/* 🌟 提示词 */}\n        <Prompts items={senderPromptsItems} onItemClick={onPromptsItemClick} />\n        {/* 🌟 输入框 */}\n        <Sender\n          value={content}\n          onSubmit={onSubmit}\n          onChange={setContent}\n          loading={agent.isRequesting()}\n          className=\"sender\"\n        />\n      </div>\n    </div>\n  );\n};\n\nexport default Independent;",
+      "__isJSFile": true,
+      "__absFile": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/src/pages/Chat/index.tsx"
+    },
+    "4": {
+      "path": "/login",
+      "file": "@/pages/Login/index.tsx",
+      "parentId": "@@/global-layout",
+      "id": "4",
+      "absPath": "/login",
+      "__content": "import React, { useState } from \"react\";\r\nimport { Form, Input, Button, message, Modal } from \"antd\";\r\nimport { Link, history } from \"umi\";\r\nimport { login } from \"@/services/chat\";\r\nimport { setToken } from \"@/services/request\";\r\nimport styles from \"./index.less\";\r\n\r\nexport const layout = false;\r\n\r\nconst LoginPage: React.FC = () => {\r\n  const [form] = Form.useForm();\r\n  const [loading, setLoading] = useState(false);\r\n  const [forgotVisible, setForgotVisible] = useState(false);\r\n  const [forgotEmail, setForgotEmail] = useState(\"\");\r\n\r\n  const onFinish = async (values: { email: string; password: string }) => {\r\n    setLoading(true);\r\n    try {\r\n      const { access_token: token } = await login(values);\r\n      setToken(token);\r\n      message.success(\"登录成功\");\r\n      history.push(\"/chat\");\r\n    } catch (error: any) {\r\n      const code = error?.response?.data?.errorCode;\r\n      const msg = error?.response?.data?.errorMessage || \"登录失败\";\r\n\r\n      if (code === \"EMAIL_NOT_FOUND\") {\r\n        form.setFields([{ name: \"email\", errors: [msg] }]);\r\n      } else if (code === \"INVALID_CREDENTIALS\") {\r\n        form.setFields([{ name: \"password\", errors: [msg] }]);\r\n      } else {\r\n        message.error(msg);\r\n      }\r\n    } finally {\r\n      setLoading(false);\r\n    }\r\n  };\r\n\r\n  const handleForgot = async () => {\r\n    if (!forgotEmail) {\r\n      message.warning(\"请输入邮箱后再提交\");\r\n      return;\r\n    }\r\n    try {\r\n      message.success(\"如果邮箱存在，重置链接已发送\");\r\n      setForgotVisible(false);\r\n    } catch {\r\n      message.error(\"发送失败，请稍后重试\");\r\n    }\r\n  };\r\n\r\n  return (\r\n   <div className={styles.pageWrapper}>\r\n        <div className={styles.logo}>\r\n          <img\r\n            className={styles.logoImg}\r\n            src=\"https://mdn.alipayobjects.com/huamei_iwk9zp/afts/img/A*eco6RrQhxbMAAAAAAAAAAAAADgCCAQ/original\"\r\n            alt=\"链 AI\"\r\n            draggable={false}\r\n          />\r\n          <span className={styles.logoText}>链 AI</span>\r\n        </div>\r\n\r\n      <div className={styles.contentWrapper}>\r\n        <div className={styles.loginContainer}>\r\n          <Form\r\n            form={form}\r\n            name=\"login\"\r\n            onFinish={onFinish}\r\n            layout=\"vertical\"\r\n          >\r\n            <Form.Item\r\n              name=\"email\"\r\n              label=\"邮箱\"\r\n              rules={[\r\n                { type: \"email\", message: \"请输入有效的邮箱地址\" },\r\n                { required: true, message: \"请输入邮箱地址\" },\r\n              ]}\r\n            >\r\n              <Input placeholder=\"请输入邮箱地址\" />\r\n            </Form.Item>\r\n\r\n            <Form.Item\r\n              name=\"password\"\r\n              label=\"密码\"\r\n              rules={[{ required: true, message: \"请输入密码\" }]}\r\n            >\r\n              <Input.Password placeholder=\"请输入密码\" />\r\n            </Form.Item>\r\n            <Form.Item className={styles.forgotRow} colon={false} wrapperCol={{ span: 24 }}>\r\n              <a onClick={() => setForgotVisible(true)}>忘记密码？</a>\r\n            </Form.Item>\r\n            <Form.Item>\r\n              <Button\r\n                type=\"primary\"\r\n                htmlType=\"submit\"\r\n                block\r\n                loading={loading}\r\n              >\r\n                登录\r\n              </Button>\r\n            </Form.Item>\r\n\r\n            <div className={styles.footer}>\r\n              <Link to=\"/register\">没有账号？立即注册</Link>\r\n            </div>\r\n          </Form>\r\n        </div>\r\n      </div>\r\n\r\n      <Modal\r\n        title=\"重置密码\"\r\n        visible={forgotVisible}\r\n        onOk={handleForgot}\r\n        onCancel={() => setForgotVisible(false)}\r\n        okText=\"发送重置链接\"\r\n      >\r\n        <Input\r\n          value={forgotEmail}\r\n          onChange={(e) => setForgotEmail(e.target.value)}\r\n          placeholder=\"请输入您的注册邮箱\"\r\n        />\r\n      </Modal>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default LoginPage;\r\n",
+      "__isJSFile": true,
+      "__absFile": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/src/pages/Login/index.tsx"
+    },
+    "5": {
+      "path": "/register",
+      "file": "@/pages/Register/index.tsx",
+      "parentId": "@@/global-layout",
+      "id": "5",
+      "absPath": "/register",
+      "__content": "import React, { useState } from \"react\";\r\nimport { Form, Input, Button, message } from \"antd\";\r\nimport { Link, history } from \"umi\";\r\nimport { register } from \"@/services/chat\";\r\nimport styles from \"./index.less\";\r\nconsole.log('▶ Loaded RegisterPage (with fieldErrors)');\r\n\r\nconst RegisterPage: React.FC = () => {\r\n  const [form] = Form.useForm();\r\n  const [fieldErrors, setFieldErrors] = useState<{\r\n    username?: string;\r\n    email?: string;\r\n  }>({});\r\n\r\n  const [loading, setLoading] = useState(false);\r\n  interface RegisterFormValues {\r\n  username: string;\r\n  email: string;\r\n  password: string;\r\n}\r\n  const onFinish = async (values: RegisterFormValues): Promise<void> => {\r\n  setFieldErrors({});\r\n  setLoading(true);\r\n  try {\r\n    await register(values);\r\n    message.success(\"注册成功\");\r\n    history.push(\"/login\");\r\n  } catch (err: any) {\r\n    // ② 根据后端的 errorCode 分发到 fieldErrors\r\n    if (err.errorCode === 'USERNAME_EXISTS') {\r\n      setFieldErrors({ username: err.errorMessage });\r\n    } else if (err.errorCode === 'EMAIL_EXISTS') {\r\n      setFieldErrors({ email: err.errorMessage });\r\n    } else {\r\n      message.error(err.errorMessage);\r\n    }\r\n  } finally {\r\n    setLoading(false);\r\n  }\r\n};\r\n\r\n\r\n  return (\r\n      <div className={styles.pageWrapper}>\r\n        <div className={styles.logoWrapper}>\r\n          <img\r\n            className={styles.logoImg}\r\n            src=\"https://mdn.alipayobjects.com/huamei_iwk9zp/afts/img/A*eco6RrQhxbMAAAAAAAAAAAAADgCCAQ/original\"\r\n            alt=\"链 AI\"\r\n            draggable={false}\r\n          />\r\n          <span className={styles.logoText}>链 AI</span>\r\n        </div>\r\n\r\n      <div className={styles.contentWrapper}>\r\n    <div className={styles.registerContainer}>\r\n      <Form\r\n        form={form}\r\n        name=\"register\"\r\n        onFinish={onFinish}\r\n        scrollToFirstError\r\n        layout=\"vertical\"\r\n      >\r\n        {/* 用户名 */}\r\n        <Form.Item\r\n          label=\"用户名\"\r\n          name=\"username\"\r\n          validateStatus={fieldErrors.username ? 'error' : undefined}\r\n          help={fieldErrors.username}\r\n          rules={[{ required: true, message: '请输入用户名' }]}\r\n        >\r\n        <Input placeholder=\"请输入用户名\" />\r\n        </Form.Item>\r\n\r\n        <Form.Item\r\n        label=\"邮箱\"\r\n        name=\"email\"\r\n        validateStatus={fieldErrors.email ? 'error' : undefined}\r\n        help={fieldErrors.email}\r\n        rules={[{ required: true, message: '请输入邮箱' }, { type: 'email', message: '请输入正确的邮箱' }]}\r\n        >\r\n        <Input placeholder=\"请输入邮箱地址\" />\r\n        </Form.Item>\r\n\r\n\r\n        {/* 密码 */}\r\n        <Form.Item\r\n          label=\"密码\"\r\n          name=\"password\"\r\n          rules={[{ required: true, message: \"请输入密码\" }]}\r\n        >\r\n          <Input.Password placeholder=\"请输入密码\" />\r\n        </Form.Item>\r\n\r\n        <Form.Item>\r\n          <Button\r\n              type=\"primary\"\r\n              htmlType=\"submit\"\r\n              loading={loading}>\r\n            注册\r\n          </Button>\r\n        </Form.Item>\r\n\r\n        <div className={styles.footer}>\r\n          <Link to=\"/login\">已有账号？直接登录</Link>\r\n        </div>\r\n      </Form>\r\n    </div>\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default RegisterPage;\r\n",
+      "__isJSFile": true,
+      "__absFile": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/src/pages/Register/index.tsx"
+    },
+    "@@/global-layout": {
+      "id": "@@/global-layout",
+      "path": "/",
+      "file": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/src/layouts/index.tsx",
+      "absPath": "/",
+      "isLayout": true,
+      "__absFile": "D:/documents/blockchain/Coinvisor-feat-fe/Coinvisor-feat-fe/frontend/src/layouts/index.tsx"
+    }
+  },
+  "apiRoutes": {},
+  "hasSrcDir": true,
+  "npmClient": "cnpm",
+  "umi": {
+    "version": "4.4.7",
+    "name": "Umi",
+    "importSource": "umi",
+    "cliName": "umi"
+  },
+  "bundleStatus": {
+    "done": false
+  },
+  "mfsuBundleStatus": {
+    "done": false
+  },
+  "react": {
+    "version": "18.3.1",
+    "path": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\react"
+  },
+  "react-dom": {
+    "version": "18.3.1",
+    "path": "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\node_modules\\react-dom"
+  },
+  "appJS": null,
+  "locale": "zh-CN",
+  "globalCSS": [
+    "D:\\documents\\blockchain\\Coinvisor-feat-fe\\Coinvisor-feat-fe\\frontend\\src\\global.less"
+  ],
+  "globalJS": [],
+  "overridesCSS": [],
+  "bundler": "webpack",
+  "framework": "react",
+  "typescript": {
+    "tsVersion": "5.8.3",
+    "tslibVersion": "2.8.1"
+  },
+  "faviconFiles": [],
+  "port": 8000,
+  "host": "0.0.0.0",
+  "ip": "192.168.8.1"
+}
