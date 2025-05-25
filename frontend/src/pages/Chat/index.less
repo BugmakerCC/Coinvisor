@@ -17,6 +17,26 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
+  .user-container {
+    padding: 16px;
+    cursor: pointer;
+    border-top: 1px solid #a5eaee;
+    &:hover {
+      background-color: #bbc9cb;
+    }
+
+    .user-profile {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .user-name {
+      text-align: center;
+      font-weight: 500;
+    }
+  }
 }
 
 .conversations {

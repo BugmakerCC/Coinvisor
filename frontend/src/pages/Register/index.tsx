@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Form, Input, Button, message } from "antd";
 import { Link, history } from "umi";
-import { register } from "@/services/chat";
+import { register ,getUserInfo} from "@/services/chat";
 import styles from "./index.less";
-console.log('▶ Loaded RegisterPage (with fieldErrors)');
 
 const RegisterPage: React.FC = () => {
   const [form] = Form.useForm();
@@ -22,7 +21,10 @@ const RegisterPage: React.FC = () => {
   setFieldErrors({});
   setLoading(true);
   try {
-    await register(values);
+    const response =await register(values);
+    //console.log('注册成功响应:', response);
+    const { username, email } = response.data;
+    console.log("注册成功，用户ID:", username, "邮箱:", email);
     message.success("注册成功");
     history.push("/login");
   } catch (err: any) {

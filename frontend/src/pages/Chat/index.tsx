@@ -7,11 +7,15 @@ import {
   useXAgent,
   useXChat,
 } from "@ant-design/x";
-import { Button, Space, Image } from "antd";
+import { MessageStatus } from "@ant-design/x/es/use-x-chat";
+import { Button, Space, Image, Avatar, Modal, message} from "antd";
+import { useNavigate } from 'react-router-dom';
+import { UserOutlined } from '@ant-design/icons';
 import type { BubbleProps } from "@ant-design/x";
-import { useEffect, useMemo, useState, useCallback } from "react";
-// import { getUserInfo } from "@/services/chat";
-import { getToken, autoLogin } from "@/services/request";
+import React,{ useEffect, useMemo, useState, useCallback } from "react";
+import { getUserInfo, getUserSessions, getChatHistory } from "@/services/chat";
+import { UserInfo, Session, PaginatedSessions, ApiResponse, PaginatedChatHistory, ChatHistoryItem } from"@/services/request";
+import { getToken, autoLogin ,clearToken} from "@/services/request";
 import "./index.less";
 
 import { FireOutlined, PlusOutlined, ReadOutlined } from "@ant-design/icons";
@@ -52,21 +56,23 @@ const roles: GetProp<typeof Bubble.List, "roles"> = {
 
 const Independent = () => {
   // ==================== State ====================
-
+  const [initialized, setInitialized] = useState(false);
   const [content, setContent] = useState("");
-  const [conversationsItems, setConversationsItems] = useState(
-    defaultConversationsItems
+   const [conversationsItems, setConversationsItems] = useState<{key:string,label:string}[]>(
+    []//defaultConversationsItems
   );
   const [activeKey, setActiveKey] = useState(defaultConversationsItems[0].key);
+
+   const [userInfo, setUserInfo] =
+    useState<UserInfo>({userId: -1, username: "未登录", email: "未登录", createdAt: -1});
 
   const [agent] = useXAgent({
     request: async ({ message }, { onUpdate, onSuccess }) => {
       let token = getToken();
-
       // 如果 token 为空或过期，自动重新登录
       if (!token) {
         try {
-          token = await autoLogin();
+          token = await autoLogin() as string;
         } catch (loginError) {
           console.error("自动登录失败:", loginError);
           throw loginError;
@@ -139,17 +145,25 @@ const Independent = () => {
   });
 
   useEffect(() => {
-    if (activeKey !== undefined) {
-      setMessages([]);
+    if(!initialized) {
+      if (activeKey !== undefined) {
+        setMessages([]);
+      }
+      // 组件初始化时自动调用getUserInfo接口，如果token过期，request.ts中的自动登录机制会处理
+      getUserInfo()
+          .then((res: any) => {
+            setUserInfo(res.data);
+            console.log("用户信息获取成功:", res);
+          })
+          .catch((err: any) => {
+            console.log("获取用户信息失败:", err);
+          })
+          .finally(() => {
+            setInitialized(true)
+          });
+
+      loadSessions();
     }
-    // 组件初始化时自动调用getUserInfo接口，如果token过期，request.ts中的自动登录机制会处理
-    // getUserInfo()
-    // .then((res: any) => {
-    //   console.log("用户信息获取成功:", res);
-    // })
-    // .catch((err: any) => {
-    //   console.log("获取用户信息失败:", err);
-    // });
   }, [activeKey]);
 
   // ==================== Event ====================
@@ -163,6 +177,43 @@ const Independent = () => {
     onRequest(info.data.description as string);
   };
 
+  const navigate = useNavigate();
+  const [modalVisible, setModalVisible] = useState(false);
+  const onUserProfileClick = () => {
+    setModalVisible(true);
+  };
+
+  const handleLogout = () => {
+  console.log("正在退出登录...");
+  // 清除 token
+  clearToken();
+  // 重定向到登录页面
+  console.log("跳转到登录页面...");
+  message.success("已退出登录");
+  navigate("/login");  // 跳转到登录页面
+  console.log("已退出登录");
+};
+
+  const loadSessions = async (current=1, pagesize=10) => {
+    try {
+      const response = await getUserSessions() as PaginatedSessions;
+      const sessions : Session[] = response.list;
+      let i=1;
+      setConversationsItems(prevItems => [
+        ...prevItems,
+        ...sessions.map(session => ({
+          key: session.sessionId, // 使用sessionId作为唯一key
+          label: `会话 ${i++} ${new Date(session.createdAt).toLocaleDateString()}`,
+          sessionData: session // 保留原始数据供后续使用
+        }))
+      ]);
+      console.log("用户会话获取成功:", response);
+      return sessions;
+    } catch(err) {
+      console.log("获取用户会话失败:", err);
+      throw err;
+    }
+  };
   const onAddConversation = () => {
     setConversationsItems([
       ...conversationsItems,
@@ -174,9 +225,27 @@ const Independent = () => {
     setActiveKey(`${conversationsItems.length}`);
   };
 
-  const onConversationClick: GetProp<typeof Conversations, "onActiveChange"> = (
+  const onConversationClick: GetProp<typeof Conversations, "onActiveChange"> = async (
     key
   ) => {
+    try {
+      const session = conversationsItems.find(item => item.key === key);
+      if(!session) return;
+      const response = await getChatHistory(session.key);
+      const messagelist = response.list as ChatHistoryItem[];
+
+      const historyMessages = messagelist.map(msg => ({
+        id: msg.historyId,
+        message: msg.content,
+        status: (msg.role === "user" ? "local" : "success") as MessageStatus,
+        createdAt: msg.createdAt
+      }));
+      setMessages(historyMessages);
+
+      console.log("历史消息获取成功:", response);
+    } catch (error) {
+      console.error('加载历史消息失败:', error);
+    }
     setActiveKey(key);
   };
 
@@ -224,7 +293,7 @@ const Independent = () => {
 
     const paragraphs: { type: ParagraphType; content: string }[] = [];
     let remaining = content;
-    let currentType: ParagraphType | null = null;
+    let currentType: ParagraphType | null = "response";
     let buffer = "";
 
     const flushBuffer = () => {
@@ -306,7 +375,9 @@ const Independent = () => {
   // ==================== Markdown渲染 ====================
   const renderMarkdown: BubbleProps["messageRender"] = useCallback(
     (content: string) => {
+      console.log("content:", content);
       const paragraphs = parseContent(content);
+      console.log("paragraphs:", paragraphs);
 
       return (
         <div className="message-paragraphs">
@@ -343,7 +414,7 @@ const Independent = () => {
 
   // ==================== 消息列表优化 ====================
   const memoizedItems = useMemo(() => {
-    return messages.map(({ id, message, status }) => ({
+    const t = messages.map(({ id, message, status }) => ({
       key: id,
       role: status === "local" ? "local" : "ai",
       content: message,
@@ -351,6 +422,8 @@ const Independent = () => {
       messageRender:
         status === "local" ? (content: string) => content : renderMarkdown,
     }));
+    console.log("Debug:", t);
+    return t;
   }, [messages, renderMarkdown]);
 
   // 对话气泡
@@ -389,7 +462,27 @@ const Independent = () => {
           activeKey={activeKey}
           onActiveChange={onConversationClick}
         />
+         <div className="user-container" onClick={onUserProfileClick}>
+          <div className="user-profile">
+            {/* 🌟 用户信息展示 */}
+            <Avatar
+              icon={<UserOutlined />}
+              style={{ backgroundColor: '#87d068' }}
+            >
+            </Avatar>
+            <span className="user-name">{userInfo.username}</span>
+          </div>
+        </div>
       </div>
+      <Modal
+        title="用户操作"
+        visible={modalVisible}  // 控制弹窗是否显示
+        onCancel={() => setModalVisible(false)}  // 点击取消时关闭弹窗
+        footer={null}  // 隐藏底部按钮
+      >
+        <Button onClick={handleLogout}>退出登录</Button>
+      </Modal>
+
       <div className="chat">
         {/* 🌟 消息列表 */}
         <Bubble.List

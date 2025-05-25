@@ -1,24 +1,14 @@
 import { request } from 'umi';
+import { ApiResponse, UserInfo,getToken, setToken, clearToken, autoLogin, LoginResponse, RegisterResponse, Session, PaginatedSessions, ChatHistoryItem, PaginatedChatHistory} from "./request";
 
-
-export interface RegisterResult {
-  username: string;
-  email: string;
-}
-
-export interface LoginResult {
-  access_token: string;
-  token_type: string;
-  expires_in: number;
-}
 
 export async function register(payload: {
   username: string;
   email: string;
   password: string;
-}): Promise<RegisterResult> {
+}): Promise<ApiResponse<RegisterResponse>> {
   try {
-    const res = await request('/api/v1/register', {
+    const res = await request<ApiResponse<RegisterResponse>>('/api/v1/register', {
       method: 'POST',
       data: payload,
       adaptor: (responseData: any): any => {
@@ -27,16 +17,15 @@ export async function register(payload: {
     },
       // ...(options || {}),
     });
-    //console.log('▶ [register · after request]:', res);
+    //console.log('注册响应:', res);//console.log('▶ [register · after request]:', res);
     if (res.success) {
-      return res.data;
+      return res;
     }
     throw {
       errorCode: res.errorCode,
       errorMessage: res.errorMessage,
     };
   } catch (err: any) {
-    //console.log('▶ [register · catch]:', err);
     if (err.errorCode) throw err;
     throw {
       errorCode: 'UNKNOWN',
@@ -49,13 +38,8 @@ export async function register(payload: {
 export async function login(
   data: { email: string; password: string },
   options?: { [key: string]: any }
-): Promise<LoginResult> {
-  const res: {
-    success: boolean;
-    data: LoginResult;
-    errorCode: string;
-    errorMessage: string;
-  } = await request("/api/v1/login", {
+): Promise<ApiResponse<LoginResponse>> {
+  const res = await request<ApiResponse<LoginResponse>>("/api/v1/login", {
     method: "POST",
     data,
     ...(options || {}),
@@ -63,24 +47,24 @@ export async function login(
 
   if (!res.success) {
     const err = new Error(res.errorMessage || "登录失败");
-    ;(err as any).response = { data: res };
+    (err as any).response = { data: res };
     throw err;
   }
 
-  return res.data;
+  return res;
 }
 
 
 // 获取当前用户信息
 export async function getUserInfo(
-  data?: any,
   options?: { [key: string]: any }
-) {
-  return request("/api/v1/user/me", {
+) : Promise<ApiResponse<UserInfo>> {
+  const response = await request<ApiResponse<UserInfo>>("/api/v1/user/me", {
     method: "GET",
-    params: data,
-    ...(options || {}),
   });
+  console.log("获取的用户信息响应:", response);
+  const apiResponse = response as ApiResponse<UserInfo>;
+  return apiResponse;
 }
 
 // 会话获取
@@ -94,7 +78,27 @@ export async function getUserSessions(
     ...(options || {}),
   });
 }
+// 历史会话
+export async function getChatHistory(
+  sessionId: string,
+  pagination?: {
+    current?: number;
+    pagesize?: number;
+  },
+  options?: { [key: string]: any }
+): Promise<PaginatedChatHistory> {
+  const response = await request(`/api/v1/chatHistory/${sessionId}`, {
+    method: "GET",
+    params: {
+      current: pagination?.current || 1,
+      pageSize: pagination?.pagesize || 10,
+      ...(options?.params || {})
+    },
+    ...(options || {})
+  });
 
+  return response as PaginatedChatHistory;
+}
 // 实时对话
 export async function chat(data?: any, options?: { [key: string]: any }) {
   return request("/api/v1/chat", {

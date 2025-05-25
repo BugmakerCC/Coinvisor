@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Input, Button, message, Modal } from "antd";
 import { Link, history } from "umi";
-import { login } from "@/services/chat";
+import { login ,getUserInfo, getUserSessions, getChatHistory, chat } from "@/services/chat";
 import { setToken } from "@/services/request";
 import styles from "./index.less";
 
@@ -16,8 +16,11 @@ const LoginPage: React.FC = () => {
   const onFinish = async (values: { email: string; password: string }) => {
     setLoading(true);
     try {
-      const { access_token: token } = await login(values);
+      const response = await login(values);
+      console.log('登录响应:', response);
+      const { accessToken: token,tokenType, expiresIn } = response.data;
       setToken(token);
+      console.log("登录成功，token:", token);
       message.success("登录成功");
       history.push("/chat");
     } catch (error: any) {

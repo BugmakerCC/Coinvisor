@@ -5,7 +5,58 @@ import { handleProxy } from "@/utils";
 // token 管理
 let cachedToken: string | null = null;
 let isAutoLoginInProgress = false;
+// 用户接口
+export interface UserInfo {
+  userId: number;
+  username: string;
+  email: string;
+  createdAt: number;
+}
 
+export interface Session {
+  sessionId: string;
+  createdAt: number;
+}
+
+export interface PaginatedSessions {
+  list: Session[];
+  current: number;
+  pageSize: number;
+  total: number;
+}
+
+export interface ChatHistoryItem {
+  historyId: string;
+  role: string;
+  content: string;
+  toolCalls: null | any; // 根据实际工具调用结构定义
+  createdAt: number;
+}
+
+export interface PaginatedChatHistory {
+  list: ChatHistoryItem[];
+  current: number;
+  pageSize: number;
+  total: number;
+}
+
+export interface ApiResponse<T> {
+  success: boolean;
+  data: T;
+  errorCode: string;
+  errorMessage: string;
+}
+
+export interface LoginResponse {
+  accessToken: string;
+  tokenType: string;
+  expiresIn: number;
+}
+
+export interface RegisterResponse {
+  username: string;
+  email: string;
+}
 /**
  * 获取最新的 token
  * @returns 当前的 token
@@ -14,6 +65,7 @@ export function getToken(): string | null {
   if (!cachedToken) {
     cachedToken = localStorage.getItem("token");
   }
+  console.log("获取到的 token:", cachedToken);
   return cachedToken;
 }
 
@@ -44,6 +96,7 @@ export async function autoLogin() {
     return new Promise((resolve) => {
       const checkToken = () => {
         const token = getToken();
+        console.log("当前 token:", token);
         if (token) {
           resolve(token);
         } else {
@@ -55,12 +108,13 @@ export async function autoLogin() {
   }
 
   isAutoLoginInProgress = true;
+  console.log("开始执行自动登录...");
   try {
     // 调用登录接口（硬编码登录信息）
     const loginResponse:{
-      access_token: string;
-      token_type: string;
-      expires_in: number;
+      accessToken: string;
+      tokenType: string;
+      expiresIn: number;
     } = await umiRequest("/api/v1/login", {
       method: "POST",
       data: {
@@ -68,7 +122,7 @@ export async function autoLogin() {
         password: "123456",
       },
     });
-    const  accessToken  = loginResponse.access_token;
+    const  accessToken  = loginResponse.accessToken;
     setToken(accessToken);
     isAutoLoginInProgress = false;
     return accessToken;
@@ -78,7 +132,7 @@ export async function autoLogin() {
     throw error;
   }
 }
-export async function request(url: string, options: any) {
+export async function request<T>(url: string, options: any) {
   let token = getToken();
 
   // 如果是登录接口则直接请求
@@ -87,14 +141,14 @@ export async function request(url: string, options: any) {
   }
 
   try {
-    const response = await umiRequest(
+    const response = await umiRequest<T>(
       url,
       Object.assign({}, options, {
         headers: {
           ...(options.headers || {}),
           Authorization: token,
         },
-        // responseType: options.responseType || "json", // 添加 responseType 选项
+       responseType: options.responseType || "json", // 添加 responseType 选项responseType 选项
       })
     );
 
