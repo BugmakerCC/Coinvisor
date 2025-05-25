@@ -7,11 +7,11 @@ export default {
   },
   define: {
     REACT_APP_ENV: REACT_APP_ENV || false,
-    SERVER_ADDRESS: "http://116.62.42.206:5000",
+    SERVER_ADDRESS: "http://47.111.15.36:5000",
   },
   proxy: {
     "/api": {
-      target: "http://116.62.42.206:5000/",
+      target: "http://47.111.15.36:5000/",
       changeOrigin: true,
     },
     "/sse": {
