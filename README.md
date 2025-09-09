@@ -45,4 +45,6 @@ Dynamic analytical approach that scales from single tool calls for simple querie
 
 ## 🎬 Demo
 
-A demo video demonstrating interaction with ***Coinvisor*** : ![demo](./resource/demo.gif)
+A demo video demonstrating interaction with ***Coinvisor*** : 
+
+![demo](./resource/demo.gif)
