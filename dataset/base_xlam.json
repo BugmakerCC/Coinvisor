@@ -1,0 +1,7224 @@
+[
+  {
+    "prompt": "Is Bitcoin (BTC) a good investment right now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Ethereum (ETH) a good investment choice at the moment?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ETH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Solana (SOL) a good investment for the rest of the year?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Solana"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is BNB (Binance Coin) a worthwhile investment today?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BNB"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "BNB",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BNB"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "BNB"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BNB"
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "Is XRP a good investment considering its legal status?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "XRP"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Cardano (ADA) a good investment for long-term growth?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ADA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Avalanche (AVAX) a good buy at its current price?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "AVAX"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "AVAX",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AVAX"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AVAX"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "AVAX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Dogecoin (DOGE) a good investment, or just a meme?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "DOGE"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DOGE"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Dogecoin"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Polkadot (DOT) a good investment for interoperability?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Polkadot"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "DOT"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "DOT",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Polkadot"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "DOT"
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "Is Chainlink (LINK) a solid investment for the long haul?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Chainlink"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LINK"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "LINK"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "LINK"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Polygon (MATIC) a good investment in the Layer 2 space?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Polygon"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Shiba Inu (SHIB) a good investment for high-risk portfolios?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "SHIB"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SHIB"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Shiba Inu"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Litecoin (LTC) still a relevant investment?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LTC"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "LTC"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Litecoin"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Tron (TRX) a good investment for its ecosystem?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TRX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Cosmos (ATOM) a good investment for its 'internet of blockchains' vision?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ATOM"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Uniswap (UNI) a good investment as a leading DEX?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "UNI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Near Protocol (NEAR) a good investment right now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "NEAR"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "NEAR"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Near Protocol"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Arbitrum (ARB) a good investment among Ethereum's L2s?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ARB"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ARB"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ARB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Optimism (OP) a good buy currently?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "OP"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Filecoin (FIL) a good investment in decentralized storage?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "FIL"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is The Sandbox (SAND) a good metaverse investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SAND"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Decentraland (MANA) a good buy for virtual real estate exposure?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "MANA"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "MANA",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "MANA"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "MANA"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Decentraland"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Axie Infinity (AXS) a good investment in the GameFi sector?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AXS"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Aave (AAVE) a good investment in DeFi lending?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AAVE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Maker (MKR) a good investment to consider?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "MKR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Render (RNDR) a good investment in the AI/GPU space?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RNDR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is VeChain (VET) a good investment for supply chain solutions?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "VET"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Hedera (HBAR) a good investment at its current valuation?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "HBAR"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "HBAR"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "HBAR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Fantom (FTM) a good investment right now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "FTM"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Algorand (ALGO) a good long-term hold?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ALGO"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ALGO"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Algorand"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Stellar (XLM) a good investment for cross-border payments?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Stellar"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Immutable X (IMX) a good investment for NFT gaming?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "IMX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is The Graph (GRT) a smart investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "The Graph"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Pepe (PEPE) a good short-term investment?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "PEPE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Sui (SUI) a good investment among the newer L1s?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SUI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Aptos (APT) a good investment to make now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "APT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Celestia (TIA) a good investment in modular blockchains?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TIA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Bittensor (TAO) a good AI-related crypto investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TAO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is dogwifhat (WIF) a good investment for meme coin speculators?",
+    "tool_call": [
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "WIF"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "WIF"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "dogwifhat"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Bonk (BONK) a good buy on the Solana ecosystem?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BONK"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is SingularityNET (AGIX) a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AGIX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Fetch.ai (FET) a good investment in the AI agent space?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Fetch.ai (FET)"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Gala (GALA) a good investment for Web3 gaming?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "GALA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Lido DAO (LDO) a good investment in liquid staking?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LDO"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "LDO"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Lido DAO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is THORChain (RUNE) a good DeFi investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RUNE"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "RUNE"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RUNE"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "RUNE"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "RUNE",
+          "days": 90,
+          "interval": "1d"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Injective (INJ) a good investment right now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "INJ"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Kaspa (KAS) a good investment to consider?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "KAS"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Starknet (STRK) a good ZK-rollup investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "STRK"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Arweave (AR) a good long-term bet on permaweb storage?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "AR"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AR"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Arweave"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Curve (CRV) a good DeFi investment despite its risks?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "CRV"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "CRV"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "CRV"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "CRV"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "CRV",
+          "days": 90,
+          "interval": "1d"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Toncoin (TON) a good investment for its Telegram integration?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TON"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Stacks (STX) a good way to invest in Bitcoin's ecosystem?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "STX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider adding Worldcoin (WLD) to my portfolio?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "WLD"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Pendle (PENDLE) a good investment for DeFi yield strategies?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PENDLE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the general outlook for Sei (SEI) as a trading-focused blockchain?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SEI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Gnosis (GNO) a good buy for its infrastructure plays?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "GNO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Mina Protocol (MINA) a good investment in zero-knowledge technology?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "MINA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Oasis Network (ROSE) for its privacy features?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ROSE"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ROSE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Chiliz (CHZ) a good investment for the fan token market?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "CHZ"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment outlook for Quant (QNT)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Quant"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Flow (FLOW) a good buy for its focus on mainstream adoption?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "FLOW"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I invest in Theta Network (THETA) for decentralized video streaming?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "THETA"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "THETA"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "THETA"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "THETA"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "THETA",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "Is Kava (KAVA) a good investment right now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "KAVA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the outlook for Zilliqa (ZIL) as an investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ZIL"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is IoTeX (IOTX) a good DePIN investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "IOTX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Livepeer (LPT) at its current price?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LPT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is JasmyCoin (JASMY) a good investment to consider?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "JASMY"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment case for Osmosis (OSMO) in the Cosmos ecosystem?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "OSMO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Ankr (ANKR) a good buy for its Web3 infrastructure services?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ANKR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Bitcoin Cash (BCH) a worthwhile investment today?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BCH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment outlook for Ethereum Classic (ETC)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ETC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Monero (XMR) a good investment for privacy?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Monero"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "XMR"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "XMR"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "XMR"
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "Should I add Tezos (XTZ) to my long-term portfolio?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Tezos"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "XTZ"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "XTZ"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "XTZ"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "XTZ",
+          "days": 90,
+          "interval": "1d"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is PancakeSwap (CAKE) a good DEX token to invest in?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "CAKE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of ApeCoin (APE)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "APE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is it a good time to buy The Graph (GRT)?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "GRT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I invest in Fantom (FTM) again?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "FTM"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "FTM",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "FTM"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "FTM"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "FTM"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Hedera (HBAR) undervalued right now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "HBAR"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "HBAR"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "HBAR"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "HBAR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the short-term price prediction for Solana (SOL)?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "SOL"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is it too late to make significant money from Bitcoin?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BTC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Ethereum a good buy for staking rewards?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ETH"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ETH"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Ethereum"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment risk of Dogecoin (DOGE).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DOGE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is now a good entry point for investing in Cardano (ADA)?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ADA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What are the top 3 reasons to invest in Avalanche (AVAX)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AVAX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Polkadot (DOT) expected to perform well in the next bull run?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Polkadot"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy more Chainlink (LINK) on this dip?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LINK"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "LINK"
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "LINK"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Chainlink"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Polygon (MATIC) a better investment than Arbitrum (ARB)?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "MATIC"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ARB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's a realistic price target for Shiba Inu (SHIB) in 2025?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Is Uniswap (UNI) a good buy ahead of its v4 upgrade?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "UNI"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "UNI"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "UNI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Render (RNDR) still a good AI-related investment?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "RNDR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the main reason to be bullish on Celestia (TIA)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TIA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is buying Kaspa (KAS) now a good move?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "KAS"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I invest in Injective (INJ) for its DeFi ecosystem?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "INJ"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "INJ"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "INJ",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "INJ"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "INJ"
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "Is the investment narrative for THORChain (RUNE) still strong?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RUNE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the future outlook for Gala (GALA) games?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "GALA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Lido DAO (LDO) a safe way to get ETH staking yield?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LDO"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "LDO"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "LDO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Bittensor (TAO) overvalued at its current market cap?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "TAO"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TAO"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "TAO"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TAO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of the ORDI token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ORDI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Stacks (STX) the best Bitcoin Layer 2 investment?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "STX"
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "STX"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "STX"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Stacks"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider investing in the Sei (SEI) blockchain?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SEI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment thesis for the Jupiter (JUP) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "JUP"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Pyth Network (PYTH) a good long-term hold?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PYTH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I take a chance on investing in Bonk (BONK)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BONK"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the WIF (dogwifhat) meme coin run over?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "WIF"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the investment potential of Fetch.ai (FET) still high?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "FET"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What are the risks of investing in Sui (SUI)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SUI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Aptos (APT) a good technology bet for the long run?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "APT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I dollar-cost average into Bitcoin now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is this a good time to accumulate more Ethereum?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ETH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's a safe allocation for a beginner in Solana?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Solana"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "SOL"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the current price of Cardano (ADA) a good entry point?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ADA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I avoid meme coins like Pepe (PEPE) altogether?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "PEPE"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PEPE"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PEPE"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "PEPE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the number one reason to own Chainlink (LINK)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Chainlink"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the long-term investment case for Polkadot (DOT) still intact?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Polkadot"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Avalanche's (AVAX) subnet technology a key investment factor?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AVAX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I sell my Dogecoin (DOGE) or hold?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "DOGE"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DOGE"
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "DOGE"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "DOGE",
+          "days": 90,
+          "interval": "1d"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Polygon (MATIC) a good buy for the next five years?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Polygon"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying Bitcoin at its current price point?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Ethereum now or wait for a dip?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ETH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Solana (SOL) for my portfolio?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Solana"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "SOL"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SOL"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying BNB now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BNB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy XRP at this price?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Should I consider buying Cardano (ADA) for a 5-year hold?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ADA"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ADA"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ADA"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "ADA",
+          "days": 5
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Avalanche (AVAX) before the next bull run?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "AVAX"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "AVAX",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AVAX"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AVAX"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "AVAX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Dogecoin (DOGE) for a quick trade?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "DOGE"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "DOGE",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "DOGE"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DOGE"
+        }
+      },
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying Polkadot (DOT) today?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "DOT"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "DOT",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DOT"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Polkadot"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "DOT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Chainlink (LINK) as a core holding?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LINK"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "LINK"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Chainlink"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "LINK"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Polygon (MATIC) now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "MATIC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying Shiba Inu (SHIB) with a small amount of money?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "SHIB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Litecoin (LTC) or just stick to Bitcoin?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LTC"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Tron (TRX) for its high transaction speed?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "TRX"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "TRX",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "TRX"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TRX"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TRX"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "TRX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying Cosmos (ATOM) for staking rewards?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ATOM"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ATOM"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Cosmos"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Uniswap (UNI) before its next version release?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "UNI"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "UNI",
+          "days": 30
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "UNI"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Uniswap"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Near Protocol (NEAR) at its current level?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "NEAR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Arbitrum (ARB) over other L2s?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ARB"
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ARB"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "ARB"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ARB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying Optimism (OP) for its governance?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "OP"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Filecoin (FIL) as a long-term speculation?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "FIL"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "FIL"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "FIL"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy The Sandbox (SAND) land or the token?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "SAND"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SAND"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "The Sandbox"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying Decentraland (MANA) now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "MANA"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "MANA",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "MANA"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Decentraland"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "MANA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Axie Infinity (AXS) after its big crash?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "AXS"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AXS"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AXS"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Aave (AAVE) for DeFi exposure?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "AAVE"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "AAVE",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AAVE"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AAVE"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "AAVE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying Maker (MKR) tokens?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "MKR"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "MKR"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Maker"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "MKR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Render (RNDR) given the AI narrative?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RNDR"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "RNDR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy VeChain (VET) at this price?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "VET"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying Hedera (HBAR) for my portfolio?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "HBAR"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "HBAR"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "HBAR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Fantom (FTM) now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "FTM"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Algorand (ALGO) despite its slow price action?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ALGO"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "ALGO",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ALGO"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Algorand"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "ALGO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying Stellar (XLM)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "XLM"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Immutable X (IMX) now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "IMX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy The Graph (GRT) tokens?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "GRT"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "GRT",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "GRT"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "The Graph"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "GRT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Pepe (PEPE) or is the hype over?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "PEPE"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "PEPE",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PEPE"
+        }
+      },
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying Sui (SUI)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SUI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Aptos (APT) for its technology?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "APT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Celestia (TIA) now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "TIA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying Bittensor (TAO)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TAO"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "TAO"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "TAO",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "TAO"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TAO"
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy dogwifhat (WIF) right now?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Should I buy Bonk (BONK) at its current price?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BONK"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying SingularityNET (AGIX)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AGIX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Fetch.ai (FET) today?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "FET"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Gala (GALA) at this price level?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "GALA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying Lido DAO (LDO)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Lido DAO"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LDO"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "LDO"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "LDO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy THORChain (RUNE) for my portfolio?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RUNE"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "RUNE"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RUNE"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "RUNE"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "RUNE",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Injective (INJ) now or wait?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "INJ"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I consider buying Kaspa (KAS)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "KAS"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Starknet (STRK) for the long term?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "STRK"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Arweave (AR) at its current market cap?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "AR"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AR"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "AR"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Arweave"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I buy Curve (CRV) now?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "CRV"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's your analysis on investing in Bitcoin?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BTC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the general outlook for Ethereum as an investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ETH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's your analysis on investing in Solana?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Solana"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the general outlook for BNB as an investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BNB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's your analysis on investing in XRP?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "XRP"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the general outlook for Cardano as an investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ADA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's your analysis on investing in Avalanche?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AVAX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the general outlook for Dogecoin as an investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DOGE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's your analysis on investing in Polkadot?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Polkadot"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the general outlook for Chainlink as an investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Chainlink"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's your analysis on investing in Polygon (MATIC)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Polygon"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the general outlook for Shiba Inu (SHIB)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SHIB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's your analysis on investing in Litecoin (LTC)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "LTC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the general outlook for Tron (TRX)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TRX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's your analysis on investing in Cosmos (ATOM)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Cosmos"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the general outlook for Uniswap (UNI)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "UNI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's your analysis on investing in Near Protocol (NEAR)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Near Protocol (NEAR)"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment outlook for Arbitrum (ARB)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ARB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment analysis for Optimism (OP)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Optimism"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the general outlook for Filecoin (FIL)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "FIL"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of The Sandbox (SAND).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "The Sandbox"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment outlook for Decentraland (MANA)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Decentraland"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of Axie Infinity (AXS).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AXS"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for Aave (AAVE)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AAVE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of Maker (MKR).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Maker"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the general investment outlook for Render (RNDR)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RNDR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of VeChain (VET).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "VeChain"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for Hedera (HBAR)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "HBAR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of Fantom (FTM).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "FTM"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the long-term outlook for Algorand (ALGO)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ALGO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of Stellar (XLM).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Stellar"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for Immutable X (IMX)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Immutable X"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of The Graph (GRT).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "The Graph"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the short-term outlook for Pepe (PEPE)?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "PEPE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of Sui (SUI).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SUI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for Aptos (APT)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "APT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of Celestia (TIA).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TIA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the general outlook for Bittensor (TAO)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TAO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of dogwifhat (WIF).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "WIF"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for Bonk (BONK)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BONK"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of SingularityNET (AGIX).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AGIX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for Fetch.ai (FET)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Fetch.ai (FET)"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of Gala (GALA).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "GALA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the outlook for Lido DAO (LDO) as an investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Lido DAO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of THORChain (RUNE).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RUNE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the general outlook for Injective (INJ)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Injective"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of Kaspa (KAS).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "KAS"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for Starknet (STRK)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Starknet"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment potential of Arweave (AR).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Arweave"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for Curve (CRV)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "CRV"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "How do I build a diversified crypto portfolio as a beginner?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What percentage of my portfolio should I allocate to Bitcoin?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What's a good crypto allocation for a high-risk, high-reward strategy?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Is Dollar-Cost Averaging (DCA) a good strategy for Ethereum?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ETH"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ETH"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ETH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "How often should I rebalance my crypto portfolio?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Design a crypto portfolio with a $5,000 investment.",
+    "tool_call": [
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ETH"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BNB"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ADA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's a 'core-satellite' strategy for crypto investing?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Should I invest in a crypto index fund?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What are the best altcoins to diversify away from Bitcoin and Ethereum?",
+    "tool_call": [
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "How to build a crypto portfolio for passive income?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What is a good starting portfolio for someone under 30?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Design a conservative crypto portfolio for someone over 50.",
+    "tool_call": []
+  },
+  {
+    "prompt": "How much cash should I keep on the sidelines for crypto dips?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What's a good allocation between Layer 1s, Layer 2s, and DApps?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How do I create a portfolio focused on the AI crypto narrative?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AI"
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "AI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is a sample crypto portfolio for a moderate risk tolerance?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Should my crypto portfolio include stablecoins? If so, what percentage?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How to manage a portfolio consisting only of meme coins?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What are the steps to take when my portfolio is down 50%?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How do I set realistic profit targets for my crypto portfolio?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Is it better to have many small crypto positions or a few large ones?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How can I use staking to enhance my portfolio returns?",
+    "tool_call": [
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BTC"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BTC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the best way to track my crypto portfolio's performance?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ETH"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BNB"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "XRP"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LTC"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "DOGE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I take profits in USD or reinvest into other cryptos?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How to build a crypto portfolio focused on the DePIN sector?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DePIN"
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 5
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "DEPIN"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What are the tax implications of rebalancing a crypto portfolio?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How does a HODL strategy compare to active trading for a portfolio?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What's a good exit strategy for my crypto investments?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How can I hedge my crypto portfolio against a market crash?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ETH"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BNB"
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 5
+        }
+      },
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 5
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BTC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What role does a coin like Chainlink (LINK) play in a diversified portfolio?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Chainlink"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LINK"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Chainlink"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "LINK"
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Bitcoin vs. Ethereum: which is a better investment for the next 5 years?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ETH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Solana vs. Cardano: which has more long-term potential?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Solana"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Cardano"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Arbitrum (ARB) vs. Optimism (OP): which L2 is a better buy?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ARB"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "OP"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Dogecoin vs. Shiba Inu: which meme coin is a better bet?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "DOGE"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "SHIB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Investing in crypto stocks (like COIN) vs. direct crypto: what are the pros and cons?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Chainlink (LINK) vs. Pyth: which oracle is a better investment?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LINK"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "PYTH"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "LINK"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PYTH"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "LINK"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "PYTH"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "LINK"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PYTH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Polygon (MATIC) vs. other L2 solutions: where should I invest?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "MATIC"
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Centralized exchanges vs. decentralized exchanges: where are the better investment opportunities?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Staking ETH vs. buying liquid staking tokens like LDO: which is better?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ETH"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LDO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Filecoin (FIL) vs. Arweave (AR): which decentralized storage coin is the better investment?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "FIL"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "AR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "The Sandbox (SAND) vs. Decentraland (MANA): compare their investment potential.",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "SAND"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "MANA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Aptos (APT) vs. Sui (SUI): which new Layer 1 is more promising?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "APT"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "SUI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Cosmos (ATOM) vs. Polkadot (DOT): compare their interoperability approach and investment case.",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ATOM"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DOT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Avalanche (AVAX) vs. Solana (SOL): which 'ETH Killer' has a better chance?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "AVAX"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "SOL"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Investing in a Layer 1 blockchain vs. investing in its top DApp.",
+    "tool_call": []
+  },
+  {
+    "prompt": "Compare the risk profile of investing in a new L1 versus an established one.",
+    "tool_call": []
+  },
+  {
+    "prompt": "Render (RNDR) vs. Akash (AKT): which DePIN project is a better investment?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "RNDR"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "AKT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Uniswap (UNI) vs. Jupiter (JUP): compare the two DEX tokens as investments.",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "UNI"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "JUP"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the difference in investment risk between a utility token and a governance token?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Compare the tokenomics of Solana and Ethereum.",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Solana"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Ethereum"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is now a good time to enter the crypto market, or should I wait?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ETH"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BNB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What are the signs of a crypto bull market starting?",
+    "tool_call": [
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "How does the Bitcoin halving event affect altcoin prices?",
+    "tool_call": [
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BTC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the 'altcoin season' and how can I prepare for it?",
+    "tool_call": [
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "How do Federal Reserve interest rate hikes affect the crypto market?",
+    "tool_call": [
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "Is crypto a good hedge against inflation?",
+    "tool_call": [
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BTC"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What does the Fear & Greed Index tell us about the market right now?",
+    "tool_call": [
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "How to invest during a crypto bear market?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What's the impact of a Bitcoin ETF on the broader crypto market?",
+    "tool_call": [
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "How do global regulations affect crypto investment?",
+    "tool_call": [
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "What is the relationship between the stock market and the crypto market?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How can I identify the top of a crypto market cycle?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What is the four-year cycle theory for Bitcoin?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How does the US dollar index (DXY) impact Bitcoin's price?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What are the macro-economic factors to watch for crypto investors in 2025?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Is the crypto market in a bubble right now?",
+    "tool_call": [
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BTC"
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "What role do stablecoins play in market liquidity?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How can on-chain data predict market movements?",
+    "tool_call": [
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the 'MVRV Z-Score' and how can I use it for Bitcoin?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How will the next global recession impact cryptocurrency prices?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What are the best investment opportunities in the GameFi sector?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "GameFi"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Which AI-related crypto projects have the most potential?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is investing in Real World Assets (RWA) tokens a good idea?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RWA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What are the top Layer 2 solutions to invest in besides Arbitrum and Optimism?",
+    "tool_call": [
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Are metaverse land plots still a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "METAVR"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "METAVR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment thesis for decentralized social media (SocialFi)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SocialFi"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Which privacy coins are worth investing in despite regulatory risks?",
+    "tool_call": [
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ZEC"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "ZEC"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ZEC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the DePIN narrative a long-term trend or a short-term hype?",
+    "tool_call": [
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "What are the top crypto projects in the BRC-20 ecosystem?",
+    "tool_call": [
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is it profitable to invest in decentralized derivatives platforms like GMX?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "GMX"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "GMX",
+          "days": 30
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "GMX"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "GMX"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "GMX"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "GMX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Which projects are leading the liquid restaking (LRT) narrative?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Are modular blockchains like Celestia the future of crypto investing?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Celestia"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "CELT"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "CELT",
+          "days": 90,
+          "interval": "1d"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "CELT"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "CELT"
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      }
+    ]
+  },
+  {
+    "prompt": "What are the risks of investing in meme coins?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How do I find promising low-cap crypto gems?",
+    "tool_call": [
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is decentralized science (DeSci) the next big crypto narrative to invest in?",
+    "tool_call": [
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DeSci"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "DESCI"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "DESCI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What are the top oracle projects to invest in other than Chainlink?",
+    "tool_call": [
+      {
+        "name": "cryptoPriceGainersRankingTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "oracle"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "ORA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I invest in crypto gaming guilds like Yield Guild Games (YGG)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "YGG"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the best way to get exposure to the NFT market as an investment?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Are infrastructure tokens (like GRT or AR) a safer bet than DApp tokens?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What are the investment opportunities in Bitcoin Layer 2s?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What are the biggest risks when investing in cryptocurrency?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How can I protect my crypto investments from hackers?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What is 'impermanent loss' in DeFi and how do I avoid it?",
+    "tool_call": [
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "IML"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "IML"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "How do I spot a 'rug pull' in a new crypto project?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What are the risks of keeping my crypto on an exchange?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Cold wallet vs. hot wallet: which is better for a long-term investor?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How do I evaluate the security and audit of a DeFi protocol?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What are the risks of investing in projects with anonymous teams?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "anonymous"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "How can I manage the high volatility of the crypto market?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What are the risks associated with staking my crypto?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What are the most important metrics for evaluating a crypto project?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BTC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "How do you read a crypto project's whitepaper for investment clues?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "whitepaper"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is tokenomics and why is it important for an investor?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "tokenomics"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What does 'Total Value Locked' (TVL) mean for a DeFi project's value?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How can I use technical analysis for crypto trading?",
+    "tool_call": [
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "BTC",
+          "days": 90,
+          "interval": "1d"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the difference between market cap and fully diluted valuation (FDV)?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How important is a project's developer activity on GitHub?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What are the key on-chain metrics to watch for Ethereum?",
+    "tool_call": [
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "ETH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "How do I do fundamental analysis on a brand new coin?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What are the red flags to look for in a crypto project's tokenomics?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Is the airdrop farming for zkSync worth the investment in time and fees?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "zkSync"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ZKS"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "zkSync"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "ZKS"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Evaluate the long-term investment case for Ripple (XRP) post-SEC lawsuit.",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Ripple"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Ripple"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "XRP"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Does Cardano's slow, academic approach make it a safer long-term investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ADA"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ADA"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ADA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment impact of Avalanche's subnet architecture?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AVAX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Will Polygon's transition to a ZK-rollup aggregator (POL) increase its value?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Polygon"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "POL"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Polygon"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the BNB chain too centralized to be a good long-term investment?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BNB"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "BNB"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BNB"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BNB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Can Shiba Inu's Layer 2, Shibarium, create real value for the SHIB token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SHIB"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "SHIB"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SHIB"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "SHIB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Cosmos Hub's (ATOM) value proposition clear enough for a new investor?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ATOM"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment thesis for EigenLayer and the restaking narrative?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "EigenLayer"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Will EIP-4844 significantly boost the investment case for Ethereum's Layer 2s?",
+    "tool_call": [
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ETH"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ETH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Helium's (HNT) move to the Solana blockchain a good thing for its price?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "HNT"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "HNT"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "HNT"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "HNT"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "HNT",
+          "days": 30
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment risk and reward of holding GMX.",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "GMX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Will Uniswap V4 create a new wave of growth for the UNI token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "UNI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Does the creation of Aave's GHO stablecoin make AAVE a better investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AAVE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the impact of institutional adoption on Bitcoin's volatility?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BTC"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BTC"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Bitcoin"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Ethereum's ultrasound money narrative a strong enough reason to invest?",
+    "tool_call": [
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ETH"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ETH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Can Solana's Firedancer client solve its network stability issues and boost its price?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Solana"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "SOL"
+        }
+      },
+      {
+        "name": "klineAnalysisTool",
+        "arguments": {
+          "symbol": "SOL",
+          "days": 30
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SOL"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the long-term value capture mechanism for Chainlink's LINK token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Chainlink"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the current price of Aptos (APT) justified by its technology and ecosystem?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "APT"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "APT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "How does Celestia's (TIA) success impact the investment case for other modular projects?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TIA"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "TIA"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TIA"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "TIA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the bull case for investing in Render (RNDR) beyond the AI hype?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RNDR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Bittensor (TAO) overvalued at its current price?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "TAO"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TAO"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "TAO"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TAO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Can Pepe (PEPE) ever reach the market cap of Dogecoin or Shiba Inu?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What is the main investment risk for Lido DAO (LDO)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Lido DAO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is THORChain's (RUNE) model for cross-chain swaps a sustainable advantage?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RUNE"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RUNE"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "RUNE"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "RUNE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the tech behind Kaspa (KAS) revolutionary enough for a long-term investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "KAS"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "How does Starknet's (STRK) technology compare to other ZK-rollups as an investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "STRK"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Arweave's (AR) 'pay once, store forever' model economically viable long-term?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "AR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the recovery plan and investment case for Curve (CRV) after its recent hacks?",
+    "tool_call": [
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "CRV"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "CRV"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Does VeChain (VET) have a strong enough moat in the supply chain industry?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "VET"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "How does Hedera's (HBAR) governing council impact its investment potential?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "HBAR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Fantom (FTM) a good comeback investment story?",
+    "tool_call": [
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "FTM"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What needs to happen for Algorand's (ALGO) price to reflect its technology?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ALGO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Stellar (XLM) being left behind by newer payment protocols?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "XLM"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "XLM"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Stellar"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Will Immutable X (IMX) become the dominant platform for all Web3 games?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "IMX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is The Graph (GRT) a critical piece of Web3 infrastructure worth investing in?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "The Graph"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Sui's (SUI) programming language (Move) a significant advantage for investors to consider?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SUI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the primary use case for Polkadot's DOT token as an investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Polkadot"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "How does the community and ecosystem of Cosmos (ATOM) contribute to its value?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ATOM"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is it too late to invest in Dogecoin (DOGE)?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "DOGE"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DOGE"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Dogecoin"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of Bitcoin Ordinals and the BRC-20 token standard?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Bitcoin Ordinals"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BRC-20 token standard"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Cronos (CRO) token a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "CRO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment case for Monero (XMR) as a privacy coin.",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Monero"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "XMR"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "XMR"
+        }
+      },
+      {
+        "name": "onChainInfoTool",
+        "arguments": {
+          "symbol": "XMR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Zcash (ZEC) a good investment?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ZEC"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ZEC"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ZEC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the outlook for Tezos (XTZ) as an investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Tezos"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I invest in EOS in 2025?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "EOS"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "EOS"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "EOS"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment case for IOTA (MIOTA)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "IOTA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is investing in Synthetix (SNX) a good way to bet on DeFi derivatives?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SNX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Neo (NEO) still a relevant smart contract platform to invest in?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "NEO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for PancakeSwap (CAKE)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PancakeSwap"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Chiliz (CHZ) a good investment for exposure to fan tokens?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "CHZ"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "CHZ"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Chiliz"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Enjin Coin (ENJ) a good gaming crypto to buy?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ENJ"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment outlook for Basic Attention Token (BAT)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BAT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Quant (QNT) a good investment for enterprise blockchain solutions?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Quant"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Analyze the investment case for eCash (XEC).",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "eCash"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Flow (FLOW) a good investment for consumer-facing applications?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "FLOW"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of Theta Network (THETA)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Theta Network"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Bitget Token (BGB) a good exchange token to invest in?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BGB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment case for Toncoin (TON)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TON"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Rocket Pool (RPL) a better investment than Lido (LDO)?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "RPL"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LDO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Frax Share (FXS) a good DeFi investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Frax Share"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the outlook for Gnosis (GNO) as an investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "GNO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Mina Protocol (MINA) a good investment in lightweight blockchains?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "MINA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of Oasis Network (ROSE)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Oasis Network"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is dYdX (DYDX) a good investment as a decentralized perpetuals exchange?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DYDX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is 1inch (1INCH) a good investment in the DEX aggregator space?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "1INCH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment outlook for Convex Finance (CVX)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Convex Finance"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Worldcoin (WLD) a good long-term investment despite privacy concerns?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "WLD"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I invest in memecoins on the Base chain?",
+    "tool_call": []
+  },
+  {
+    "prompt": "What is the investment case for Pendle (PENDLE) and the yield tokenization market?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PENDLE"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PENDLE"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "PENDLE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Rollbit (RLB) a good investment in the GambleFi sector?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RLB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for the Pyth Network (PYTH) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PYTH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Jupiter (JUP) a good long-term hold in the Solana ecosystem?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "JUP"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential for the Dymension (DYM) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DYM"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Manta Network (MANTA) a good modular L2 investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "MANTA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the outlook for the ZetaChain (ZETA) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ZETA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the AltLayer (ALT) token a good investment for the restaking narrative?",
+    "tool_call": [
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ALT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment case for the WEN (WEN) meme coin?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "WEN"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I invest in the Jito (JTO) token for Solana liquid staking exposure?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "JTO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the ORDI (ORDI) token a good way to invest in Bitcoin Ordinals?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ORDI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of the SATS (SATS) BRC-20 token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SATS"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Memecoin (MEME) token by Memeland a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "MEME"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for the Blur (BLUR) NFT marketplace token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Blur"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Sei (SEI) token a good investment in parallelized blockchains?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SEI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment case for the Casper (CSPR) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "CSPR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Stacks (STX) token the best way to invest in Bitcoin smart contracts?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "STX"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "STX"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "STX"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "STX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential for Ronin (RON)?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RON"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Conflux (CFX) token a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Conflux"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the outlook for the Flare (FLR) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "FLR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Hedera Hashgraph (HBAR) a good buy?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "HBAR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is Beam (BEAM) a good investment for confidential DeFi?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BEAM"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of the Terra Classic (LUNC) token?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "LUNC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the WOO Network (WOO) token a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "WOO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment outlook for the Kava (KAVA) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "KAVA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Zilliqa (ZIL) token a good buy?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "ZIL"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ZIL"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ZIL"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment case for the IoTeX (IOTX) token in the DePIN space?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "IOTX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the SKALE (SKL) token a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SKL"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of the Livepeer (LPT) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "LPT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the JasmyCoin (JASMY) a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "JASMY"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for the STEPN (GMT) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "GMT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Osmosis (OSMO) token a good investment in the Cosmos ecosystem?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "OSMO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of the Celo (CELO) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "CELO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Ankr (ANKR) token a good investment in Web3 infrastructure?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ANKR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment case for the Holo (HOT) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "HOT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the TrueFi (TRU) token a good RWA investment?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "TRU"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TRU"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TrueFi"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for the Ribbon Finance (RBN) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RBN"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Audius (AUDIO) token a good investment in decentralized music?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Audius"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of the Echelon Prime (PRIME) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PRIME"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the SuperRare (RARE) token a good NFT art investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RARE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment case for the Raydium (RAY) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RAY"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Serum (SRM) token a good investment after the FTX collapse?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SRM"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for the Illuvium (ILV) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Illuvium"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Yield Guild Games (YGG) token a good gaming investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "YGG"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of the Vulcan Forged (PYR) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PYR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the MyNeighborAlice (ALICE) token a good gaming investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "ALICE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment case for the ApeCoin (APE) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "APE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Magic (MAGIC) token a good investment in the TreasureDAO ecosystem?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "MAGIC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of the Golem (GLM) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Golem"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Band Protocol (BAND) a good oracle investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Band Protocol"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment case for the UMA (UMA) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "UMA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Kyber Network (KNC) token a good DeFi investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "KNC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for the 0x (ZRX) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "0x"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Bancor (BNT) token a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Bancor"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of the Balancer (BAL) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Balancer"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the API3 (API3) token a good oracle investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "API3"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment case for the Tellor (TRB) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TRB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Ocean Protocol (OCEAN) a good data marketplace investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "OCEAN"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for the Powerledger (POWR) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "POWR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Status (SNT) token a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Status"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of the Storj (STORJ) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "STORJ"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Siacoin (SC) a good decentralized storage investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment case for the Nervos Network (CKB) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "CKB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Reserve Rights (RSR) token a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RSR"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment outlook for the PAX Gold (PAXG) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PAXG"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Tether Gold (XAUT) a good way to invest in gold via crypto?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "XAUT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment case for the Wrapped Bitcoin (WBTC) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "WBTC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Dai (DAI) stablecoin a good asset to hold during market volatility?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "DAI"
+        }
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DAI"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "DAI"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DAI"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of the Frax (FRAX) stablecoin ecosystem?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "FRAX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the GMX token a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "GMX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment case for the LooksRare (LOOKS) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "LOOKS"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the X2Y2 token a good investment in the NFT marketplace space?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "X2Y2"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of the Joe (JOE) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "JOE"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Radiant Capital (RDNT) a good cross-chain lending investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "RDNT"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for the Gains Network (GNS) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "GNS"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the MUX Protocol (MCB) a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "MCB"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment case for the Velodrome Finance (VELO) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "VELO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Camelot (GRAIL) a good Arbitrum-native DEX investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "GRAIL"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for the Dopex (DPX) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DPX"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Jones DAO (JONES) a good DeFi options vault investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "JONES"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of the PlutusDAO (PLS) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PlutusDAO"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Vector Finance (VTX) token a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Vector Finance (VTX)"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment case for the Redacted Cartel (BTRFLY) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "BTRFLY"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Hop Protocol (HOP) a good bridge investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "HOP"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment potential of the Stargate Finance (STG) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "STG"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Synapse (SYN) token a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "SYN"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment outlook for the Celestia (TIA) token now that it has launched?",
+    "tool_call": [
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "TIA"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Dymension (DYM) a good buy after its airdrop?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "DYM"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I invest in the Pyth Network (PYTH) token for oracle exposure on Solana?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "PYTH"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Jupiter (JUP) airdrop a sell or a long-term hold?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "JUP"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment case for the Wormhole (W) token?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "W"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the LayerZero (ZRO) token a good investment to watch for?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "LayerZero"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Should I be farming airdrops as an investment strategy?",
+    "tool_call": [
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "airdrop"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "airdrop"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the friend.tech points system a good investment?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "friend.tech"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment potential of NFT collections like CryptoPunks?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "CryptoPunks"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is buying a Bored Ape Yacht Club (BAYC) NFT a good investment today?",
+    "tool_call": [
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "BAYC"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the investment outlook for the Azuki NFT collection?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Azuki"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is the Pudgy Penguins NFT collection a good buy?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Pudgy Penguins"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What is the investment case for generative art NFTs on Art Blocks?",
+    "tool_call": [
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "Art Blocks"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "Is investing in music NFTs a viable strategy?",
+    "tool_call": [
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "historicalEventAnalysisAgent",
+        "arguments": {
+          "project_identifier": "MUSIC"
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "MUSIC"
+        }
+      },
+      {
+        "name": "contractAnalysisTool",
+        "arguments": {
+          "symbol": "MUSIC"
+        }
+      },
+      {
+        "name": "cryptoProjectAnalysisAgent",
+        "arguments": {
+          "project_identifier": "music"
+        }
+      }
+    ]
+  },
+  {
+    "prompt": "What's the outlook for domain name NFTs like ENS?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Is it better to invest in the floor price of an NFT collection or rarer items?",
+    "tool_call": []
+  },
+  {
+    "prompt": "How to evaluate the investment potential of a new NFT project?",
+    "tool_call": []
+  },
+  {
+    "prompt": "Is the NFT market dead or is it a good time to buy?",
+    "tool_call": [
+      {
+        "name": "cryptoNewsAgent",
+        "arguments": {}
+      },
+      {
+        "name": "popularCryptocurrencyTool",
+        "arguments": {
+          "top_n": 10
+        }
+      },
+      {
+        "name": "realTimeMarketInfoTool",
+        "arguments": {
+          "symbol": "NFT"
+        }
+      }
+    ]
+  }
+]
