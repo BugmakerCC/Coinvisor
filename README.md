@@ -10,7 +10,7 @@
 
 A demo video demonstrating interaction with ***Coinvisor*** : 
 
-<img src="./resource/demo.gif" alt="demo" width="600" height="400">
+<img src="./resource/demo.gif" alt="demo" width="800" height="400">
 
 
 ## ✨ Key Features
