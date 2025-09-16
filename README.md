@@ -6,6 +6,13 @@
 
 ![Overview](./resource/overview.png)
 
+## 🎬 Demo
+
+A demo video demonstrating interaction with ***Coinvisor*** : 
+
+<img src="./resource/demo.gif" alt="demo" width="600" height="400">
+
+
 ## ✨ Key Features
 
 ### 📊 Market Analysis
@@ -42,9 +49,3 @@ Dynamic analytical approach that scales from single tool calls for simple querie
 **Data Analytics Tools**: Direct API integrations with Binance, Etherscan, and CoinGecko for real-time data retrieval and specialized analysis
 
 **Report Agents**: Three specialized LLM-based agents (PBAgent, HEAgent, CNAgent) providing structured insights for investment reasoning
-
-## 🎬 Demo
-
-A demo video demonstrating interaction with ***Coinvisor*** : 
-
-![demo](./resource/demo.gif)
