@@ -10,7 +10,10 @@
 
 A demo video demonstrating interaction with ***Coinvisor*** : 
 
-<img src="./resource/demo.gif" alt="demo" width="800" height="400">
+<video width="800" height="400" controls>
+  <source src="./resource/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 ## ✨ Key Features
